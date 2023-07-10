@@ -17,7 +17,7 @@ export default function App() {
       setIsCheckingForCrisises(true);
     } else {
       clearInterval(intervalRef.current);
-      intervalRef.current = false;
+      intervalRef.current = null;
       setIsCheckingForCrisises(false);
     }
   };
@@ -25,7 +25,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>BFRB AWARE</Text>
-      <Text>{isCrisis ? "Crisis in progres" : "No Crisis"}</Text>
+      <Text>{isCrisis ? "Crisis in progress" : "No Crisis"}</Text>
 
       <Button
         title={
