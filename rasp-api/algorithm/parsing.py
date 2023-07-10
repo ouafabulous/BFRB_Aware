@@ -52,7 +52,6 @@ def parse_data(input_file_path: str):
         "hrs": parsed_heart_rate
     }
 
-#print(f"Data successfully parsed and saved in JSON format in files\n{output_heart_rate}\n{output_position}")
 
 if __name__ == "__main__":
     input_file_path = sys.argv[1]
@@ -67,3 +66,4 @@ if __name__ == "__main__":
 
     with open(output_heart_rate, 'w') as output_file:
         json.dump(hrs, output_file)
+    print(f"Data successfully parsed and saved in JSON format in files\n{output_heart_rate}\n{output_position}")
