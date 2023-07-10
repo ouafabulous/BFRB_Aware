@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def fetch_data(filename, with_utc=True):
+def fetch_data(filename, with_utc=False):
     if with_utc:
         uart_regex = r'\[(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{3})\] ' \
                      r'\[SENSORS_SYNC\]\[sample\] x:(-?\d+).+y:(-?\d+).+z:(-?\d+)'
