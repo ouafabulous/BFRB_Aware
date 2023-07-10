@@ -3,8 +3,11 @@ import sys
 import re
 
 
-def extract_position(c: str) -> int:
-    pattern = fr'{c}:-?(\d+)'
+def extract_data(data: str) -> int:
+    if data == "heart_rate":
+        pattern = r"display: (\d+)"
+    else:
+        pattern = fr'{data}:-?(\d+)'
     match = re.search(pattern, line)
     if match:
         x = int(match.group().split(':')[1])
@@ -25,15 +28,12 @@ parsed_heart_rate = []
 with open(input_file_path, 'r') as file:
     for line in file:
         if '[SENSORS_SYNC][sample]' in line:
-            x = extract_position('x')
-            y = extract_position('y')
-            z = extract_position('z')
+            x = extract_data('x')
+            y = extract_data('y')
+            z = extract_data('z')
             parsed_position.append({'x': x, 'y': y, 'z': z})
         if '[HR_MEASURE][CONTINUOUS]' in line:
-            pattern = r"display: (\d+)"
-            match = re.search(pattern, line)
-            if match:
-                heart_rate = int(match.group().split(':')[1])
+            heart_rate = extract_data('heart_rate')
             parsed_heart_rate.append({'hr': heart_rate})
 
 with open(output_position, 'w') as output_file:
