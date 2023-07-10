@@ -7,8 +7,8 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 input_file_path = sys.argv[1]
-output_heart_rate = f"./json_outputs/heartRate_{input_file_path.split('.')[0]}.json"
-output_position = f"./json_outputs/position_{input_file_path.split('.')[0]}.json"
+output_heart_rate = f"./json_outputs/heartRate_{input_file_path.split('.')[0].split('/')[-1]}.json"
+output_position = f"./json_outputs/position_{input_file_path.split('.')[0].split('/')[-1]}.json"
 
 parsed_position = []
 parsed_heart_rate = []
