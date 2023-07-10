@@ -46,6 +46,8 @@ with open(input_file_path, 'r') as file:
         elif '[HR_MEASURE][CONTINUOUS]' in line:
             t = extract_data('timestamp', line)
             heart_rate = extract_data('heart_rate', line)
+            if t is None or heart_rate is None:
+                continue
             parsed_heart_rate.append({'timestamp': t, 'hr': heart_rate})
 
 with open(output_position, 'w') as output_file:
