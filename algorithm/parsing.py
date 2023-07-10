@@ -2,6 +2,15 @@ import json
 import sys
 import re
 
+
+def extract_position(c: str) -> int:
+    pattern = fr'{c}:-?(\d+)'
+    match = re.search(pattern, line)
+    if match:
+        x = int(match.group().split(':')[1])
+    return x
+
+
 # Check if the file name is provided as an argument
 if len(sys.argv) < 2:
     print("Please provide the file name to parse as an argument.")
@@ -16,22 +25,10 @@ parsed_heart_rate = []
 with open(input_file_path, 'r') as file:
     for line in file:
         if '[SENSORS_SYNC][sample]' in line:
-            pattern = r'x:-?(\d+)'
-            match = re.search(pattern, line)
-            if match:
-                x = int(match.group().split(':')[1])
-
-            pattern = r'y:-?(\d+)'
-            match = re.search(pattern, line)
-            if match:
-                y = int(match.group().split(':')[1])
-
-            pattern = r'z:-?(\d+)'
-            match = re.search(pattern, line)
-            if match:
-                z = int(match.group().split(':')[1])
+            x = extract_position('x')
+            y = extract_position('y')
+            z = extract_position('z')
             parsed_position.append({'x': x, 'y': y, 'z': z})
-            # TODO : need to split and get only number
         if '[HR_MEASURE][CONTINUOUS]' in line:
             pattern = r"display: (\d+)"
             match = re.search(pattern, line)
@@ -45,4 +42,4 @@ with open(output_position, 'w') as output_file:
 with open(output_heart_rate, 'w') as output_file:
     json.dump(parsed_heart_rate, output_file)
 
-print(f"Data successfully parsed and saved in JSON format in files\n{output_heart_rate}\n{output_position}.")
+print(f"Data successfully parsed and saved in JSON format in files\n{output_heart_rate}\n{output_position}")
