@@ -1,50 +1,23 @@
-import { StatusBar } from 'expo-status-bar'
 import React from 'react'
-import { StyleSheet, Text, View, Button } from 'react-native'
-import notifee from '@notifee/react-native'
-import { AndroidColor } from '@notifee/react-native'
+import { StatusBar } from 'expo-status-bar'
+import { Text, View, Button } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import Contacts from './components/Contacts'
+import Guidelines from './components/Guidelines'
+import Home from './components/Home'
 
-export default function App() {
-  async function onDisplayNotification() {
-    // Request permissions (required for iOS)
-    await notifee.requestPermission()
+const Tab = createBottomTabNavigator()
 
-    // Create a channel (required for Android)
-    const channelId = await notifee.createChannel({
-      id: 'default',
-      name: 'Default Channel',
-    })
-
-    // Display a notification
-    await notifee.displayNotification({
-      title: 'Notification Title',
-      body: 'Main body content of the notification',
-      android: {
-        channelId,
-        smallIcon: 'name-of-a-small-icon', // optional, defaults to 'ic_launcher'.
-        // pressAction is needed if you want the notification to open the app when pressed
-        pressAction: {
-          id: 'default',
-        },
-      },
-    })
-  }
-
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>BFRB AWARE</Text>
-
-      <Button title='send Notification' onPress={() => onDisplayNotification()} />
-      <StatusBar style='auto' />
-    </View>
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name='Home' component={Home} />
+        <Tab.Screen name='Contacts' component={Contacts} />
+      </Tab.Navigator>
+    </NavigationContainer>
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-})
+export default App
