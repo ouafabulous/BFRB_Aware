@@ -1,10 +1,26 @@
 import { StatusBar } from "expo-status-bar";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
 import detectCrisis from "./detectCrisis";
 
 export default function App() {
   const [isCrisis, setIsCrisis] = useState(false);
+  const [isCheckingForCrisises, setIsCheckingForCrisises] = useState(false);
+  const intervalRef = useRef(null);
+
+  const toggleCrisisCheck = () => {
+    if (intervalRef.current == null) {
+      intervalRef.current = setInterval(
+        () => setIsCrisis(detectCrisis()),
+        1000
+      );
+      setIsCheckingForCrisises(true);
+    } else {
+      clearInterval(intervalRef.current);
+      intervalRef.current = false;
+      setIsCheckingForCrisises(false);
+    }
+  };
 
   return (
     <View style={styles.container}>
@@ -12,8 +28,12 @@ export default function App() {
       <Text>{isCrisis ? "Crisis in progres" : "No Crisis"}</Text>
 
       <Button
-        title="send Notification"
-        onPress={() => setInterval(() => setIsCrisis(detectCrisis()), 3000)}
+        title={
+          isCheckingForCrisises
+            ? "Checking For a crisis..."
+            : "Press to check for a crisis"
+        }
+        onPress={toggleCrisisCheck}
       />
       <StatusBar style="auto" />
     </View>
