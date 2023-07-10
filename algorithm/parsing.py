@@ -8,7 +8,7 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 input_file_path = sys.argv[1]
-output_heart_rate = f"./json_outputs/heartRate_{input_file_path.split('.')[0].split('/')[-1]}.json"
+output_heart_rate = f"./json_outputs/heart_rate_{input_file_path.split('.')[0].split('/')[-1]}.json"
 output_position = f"./json_outputs/position_{input_file_path.split('.')[0].split('/')[-1]}.json"
 
 parsed_position = []
@@ -45,4 +45,4 @@ with open(output_position, 'w') as output_file:
 with open(output_heart_rate, 'w') as output_file:
     json.dump(parsed_heart_rate, output_file)
 
-print("Data successfully parsed and saved in JSON format.")
+print(f"Data successfully parsed and saved in JSON format in files\n{output_heart_rate}\n{output_position}.")
