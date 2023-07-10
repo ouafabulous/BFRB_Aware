@@ -1,18 +1,25 @@
 import json
 import sys
 import re
+from datetime import datetime
 
 
-def extract_data(data: str) -> int:
+def extract_data(data: str, line: str) -> int:
     if data == "heart_rate":
         pattern = r"display: (\d+)"
+    elif data == "timestamp":
+        pattern = r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d+'
     else:
         pattern = fr'{data}:-?(\d+)'
     match = re.search(pattern, line)
     if match:
-        x = int(match.group().split(':')[1])
-    return x
-
+        if data == "timestamp":
+            timestamp = datetime.strptime(match.group(), '%Y-%m-%d %H:%M:%S.%f')
+            return int(timestamp.timestamp())
+        else:
+            return int(match.group().split(':')[1])
+    else:
+        return None
 
 # Check if the file name is provided as an argument
 if len(sys.argv) < 2:
@@ -28,13 +35,19 @@ parsed_heart_rate = []
 with open(input_file_path, 'r') as file:
     for line in file:
         if '[SENSORS_SYNC][sample]' in line:
-            x = extract_data('x')
-            y = extract_data('y')
-            z = extract_data('z')
-            parsed_position.append({'x': x, 'y': y, 'z': z})
+            print(line)
+            extract_data('timestamp', line)
+            t = extract_data('timestamp', line)
+            x = extract_data('x', line)
+            y = extract_data('y', line)
+            z = extract_data('z', line)
+            if x is None or y is None or z is None or t is None:
+                continue
+            parsed_position.append({'timestamp': t, 'x': x, 'y': y, 'z': z})
         if '[HR_MEASURE][CONTINUOUS]' in line:
-            heart_rate = extract_data('heart_rate')
-            parsed_heart_rate.append({'hr': heart_rate})
+            t = extract_data('timestamp', line)
+            heart_rate = extract_data('heart_rate', line)
+            parsed_heart_rate.append({'timestamp': t, 'hr': heart_rate})
 
 with open(output_position, 'w') as output_file:
     json.dump(parsed_position, output_file)
