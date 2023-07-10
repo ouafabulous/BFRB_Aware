@@ -1,50 +1,42 @@
-import { StatusBar } from "expo-status-bar";
-import React, { useState, useRef } from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
-import detectCrisis from "./detectCrisis";
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import Ionicons from 'react-native-vector-icons/Ionicons'
+import Contacts from './components/Contacts'
+import Guidelines from './components/Guidelines'
+import Home from './components/Home'
 
-export default function App() {
-  const [isCrisis, setIsCrisis] = useState(false);
-  const [isCheckingForCrisises, setIsCheckingForCrisises] = useState(false);
-  const intervalRef = useRef(null);
+const Tab = createBottomTabNavigator()
 
-  const toggleCrisisCheck = () => {
-    if (intervalRef.current == null) {
-      intervalRef.current = setInterval(
-        () => setIsCrisis(detectCrisis()),
-        1000
-      );
-      setIsCheckingForCrisises(true);
-    } else {
-      clearInterval(intervalRef.current);
-      intervalRef.current = null;
-      setIsCheckingForCrisises(false);
-    }
-  };
-
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>BFRB AWARE</Text>
-      <Text>{isCrisis ? "Crisis in progress" : "No Crisis"}</Text>
+    <NavigationContainer>
+      <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ focused, color, size }) => {
+            let iconName
 
-      <Button
-        title={
-          isCheckingForCrisises
-            ? "Checking For a crisis..."
-            : "Press to check for a crisis"
-        }
-        onPress={toggleCrisisCheck}
-      />
-      <StatusBar style="auto" />
-    </View>
-  );
+            if (route.name === 'Home') {
+              iconName = focused ? 'ios-play-circle' : 'ios-play-circle-outline'
+            } else if (route.name === 'Contacts') {
+              iconName = focused ? 'ios-list' : 'ios-list-outline'
+            } else if (route.name === 'Guidelines') {
+              iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline'
+            }
+
+            // You can return any component that you like here!
+            return <Ionicons name={iconName} size={size} color={color} />
+          },
+          tabBarActiveTintColor: 'tomato',
+          tabBarInactiveTintColor: 'gray',
+        })}
+      >
+        <Tab.Screen name='Guidelines' component={Guidelines} />
+        <Tab.Screen name='Home' component={Home} />
+        <Tab.Screen name='Contacts' component={Contacts} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+export default App
