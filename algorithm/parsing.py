@@ -36,7 +36,6 @@ parsed_heart_rate = []
 with open(input_file_path, 'r') as file:
     for line in file:
         if '[SENSORS_SYNC][sample]' in line:
-            extract_data('timestamp', line)
             t = extract_data('timestamp', line)
             x = extract_data('x', line)
             y = extract_data('y', line)
@@ -44,7 +43,7 @@ with open(input_file_path, 'r') as file:
             if x is None or y is None or z is None or t is None:
                 continue
             parsed_position.append({'timestamp': t, 'x': x, 'y': y, 'z': z})
-        if '[HR_MEASURE][CONTINUOUS]' in line:
+        elif '[HR_MEASURE][CONTINUOUS]' in line:
             t = extract_data('timestamp', line)
             heart_rate = extract_data('heart_rate', line)
             parsed_heart_rate.append({'timestamp': t, 'hr': heart_rate})
