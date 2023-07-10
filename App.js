@@ -1,11 +1,40 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import React, { useState, useRef } from "react";
+import { StyleSheet, Text, View, Button } from "react-native";
+import detectCrisis from "./detectCrisis";
 
 export default function App() {
+  const [isCrisis, setIsCrisis] = useState(false);
+  const [isCheckingForCrisises, setIsCheckingForCrisises] = useState(false);
+  const intervalRef = useRef(null);
+
+  const toggleCrisisCheck = () => {
+    if (intervalRef.current == null) {
+      intervalRef.current = setInterval(
+        () => setIsCrisis(detectCrisis()),
+        1000
+      );
+      setIsCheckingForCrisises(true);
+    } else {
+      clearInterval(intervalRef.current);
+      intervalRef.current = false;
+      setIsCheckingForCrisises(false);
+    }
+  };
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>BFRB AWARE</Text>
+      <Text>{isCrisis ? "Crisis in progres" : "No Crisis"}</Text>
+
+      <Button
+        title={
+          isCheckingForCrisises
+            ? "Checking For a crisis..."
+            : "Press to check for a crisis"
+        }
+        onPress={toggleCrisisCheck}
+      />
       <StatusBar style="auto" />
     </View>
   );
@@ -14,8 +43,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

@@ -1,0 +1,1553 @@
+Last login: Fri Jul  7 17:56:16 on ttys005
+➜  ~ minicom -b 1000000 -D /dev/cu.usbserial-A10LLATK
+
+Welcome to minicom 2.8
+
+OPTIONS: I18n
+Compiled on Jan  2 2023, 09:38:41.
+Port /dev/cu.usbserial-A10LLATK, 11:48:02
+
+Press Meta-Z for help on special keys
+
+[AM] Set id 14 at 226969
+[AM] Defuse id 14
+[load_screen_list] Add screen 6
+[load_screen_list] Add screen 130
+[load_screen_list] Add screen 127
+[load_screen_list] Add screen 128
+[load_screen_list] Add screen 140
+[load_screen_list] Add screen 137
+[load_screen_list] Add screen 150
+[load_screen_list] Add screen 151
+[WUI] on_enter Menu carousel
+[load_screen_list] Let's switch to preview screen!
+init_home_screen dnd_state = 0   alarm_found = 0         alarm_activated = 1
+[WUI] on_enter Home
+[BOARD] OLED configure GPIO + Power ON
+[SCANWATCH][HR_MEASURE] request: m_scanwatch->hr_is_on = 0
+-I- [HR_MEASURE][MODE] --> Request mode 2
+-D- [HR_MEASURE][MODE] BURST_AUTO:0    BURST_MANUAL:1    CONTINUOUS:0
+-I- [HR_MEASURE] Request HR MANUAL algo
+-D- [ALGO_MANAGER][UPDATE] Start HR algo
+-D- [ALGO_MANAGER][UPDATE] Start HR_BURST algo
+-D- [ALGO_MANAGER][UPDATE] Start WORN algo
+[TRIG] stop clock
+[ADXL362][adxl362_set_mode] ADXL362_LOCK
+[ADXL362][adxl362_set_mode] setPowerControl_ADXL362
+[ADXL362][adxl362_set_mode] _adxl362_handle
+[ADXL362][adxl362_set_mode] glance_reset
+[ADXL362] Set mode 1
+[ADXL362] Continuous measure mode ON
+[ADXL362] ID_1: 0xAD
+[ADXL362] ID_2: 0x1D
+[ADXL362] ID_3: 0xF2
+[max8614x] waited VDD for 1 ms
+[max8614x] DAC calibration time 225 ms
+[max8614x][state] requested
+[max8614x][state] configured 0
+[max8614x][state] started
+[WORKOUT_RAWDATA] is_silent = 0
+[TRIG] start clock in mode 0
+[WUI] on_exit Home
+[WUI] on_enter Settings
+[SENSORS_SYNC][sample] x:39     y:-30   z:591   ir:0    red:0   green:187593    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:49     y:9     z:615   ir:0    red:0   green:219848    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:-131  z:571   ir:0    red:0   green:252176    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:83     y:-30   z:553   ir:0    red:0   green:284420    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:52     y:-14   z:600   ir:0    red:0   green:316677    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:39     y:-68   z:547   ir:0    red:0   green:348697    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:-79   z:566   ir:0    red:0   green:381016    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:24     y:-76   z:567   ir:0    red:0   green:413242    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:-73   z:569   ir:0    red:0   green:445721    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:-31   z:585   ir:0    red:0   green:478014    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:0      y:-39   z:579   ir:0    red:0   green:510586    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:-2     y:-47   z:595   ir:0    red:0   green:518143    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:12     y:-63   z:584   ir:0    red:0   green:517887    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:-15   z:582   ir:0    red:0   green:517887    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:1      y:-35   z:566   ir:0    red:0   green:517887    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:16     y:-25   z:604   ir:0    red:0   green:517887    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:35     y:-19   z:603   ir:0    red:0   green:517887    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:-24    y:-44   z:588   ir:0    red:0   green:517887    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:38     y:-56   z:572   ir:0    red:0   green:517887    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:25     y:-92   z:575   ir:0    red:0   green:517887    agc:[123930,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:31     y:-75   z:572   ir:0    red:0   green:517887    agc:[123930,0,0,0,0,0]
+[WUI] on_exit Settings
+[WUI] on_enter Clock Menu
+[AM] Set id 14 at 226973
+[AM] Defuse id 14
+[SENSORS_SYNC][sample] x:44     y:-24   z:579   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:-6    z:553   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:24     y:-99   z:576   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:48     y:-12   z:583   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:15     y:-43   z:577   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:15    z:596   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:0      y:-9    z:590   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:19     y:-17   z:595   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:-24   z:572   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:41     y:-7    z:572   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:-7    z:583   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:71     y:34    z:595   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:41     y:-24   z:588   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:-42    y:-103  z:568   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:67     y:-83   z:583   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:24     y:-51   z:588   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:48     y:-39   z:572   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:16     y:-56   z:583   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:35     y:-44   z:577   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:41     y:-56   z:560   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:19     y:-71   z:585   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:27     y:-63   z:556   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:48     y:-12   z:595   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:11     y:-31   z:591   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:28     y:-24   z:569   ir:0    red:0   green:517887    agc:[95256,0,0,0,0,0]
+[WUI] on_exit Clock Menu
+[WUI] on_enter Workout
+[SENSORS_SYNC][sample] x:24     y:-1    z:579   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:19     y:-44   z:568   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:14     y:-15   z:582   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:-51   z:579   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:28     y:-22   z:591   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:31     y:-12   z:604   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:24     y:-12   z:600   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:8      y:-63   z:588   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:52     y:-70   z:579   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:24     y:-92   z:579   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:39     y:-91   z:575   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:44     y:-56   z:579   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:55     y:-39   z:575   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:23     y:-38   z:572   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:31     y:-67   z:575   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:35     y:-51   z:563   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:39     y:-48   z:580   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:-70   z:568   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:6      y:4     z:551   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:-36   z:591   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:-42    y:-36   z:571   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:38     y:-44   z:608   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:-9     y:-32   z:588   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:-58    y:-30   z:588   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[SENSORS_SYNC][sample] x:-32    y:-51   z:575   ir:0    red:0   green:517887    agc:[73386,0,0,0,0,0]
+[WUI] on_background Menu carousel
+[WUI] on_background Workout
+[WUI] on_enter Workout mode
+-I- [WORKOUT_RAWDATA] activity 1 : rawdata not saved
+[WUI] on_enter Workout 1
+[WUI] on_exit Workout 1
+[WUI] on_enter Workout 2
+-I- [WORKOUT_RAWDATA] activity 36 : rawdata saved
+[AM] Set id 14 at 226975
+[AM] Defuse id 14
+[SENSORS_SYNC][sample] x:-25    y:-56   z:591   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:25     y:-51   z:599   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-32    y:-65   z:584   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:19     y:-65   z:590   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:-20    y:-71   z:576   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:19     y:-44   z:574   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:44     y:-76   z:559   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:12     y:-67   z:551   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:39     y:-67   z:552   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:19     y:-112  z:558   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:59     y:-41   z:560   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:-60   z:568   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:-20   z:579   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:-64   z:579   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:28     y:-41   z:595   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:39     y:-35   z:604   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:40     y:-78   z:574   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:41     y:-62   z:591   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:60     y:-60   z:588   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:51     y:-52   z:585   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:19     y:-143  z:540   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:56     y:-88   z:577   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:39     y:-83   z:568   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:48     y:-112  z:568   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:27     y:-95   z:585   ir:0    red:0   green:517887    agc:[113724,1,0,0,0,0]
+[WUI] on_exit Workout 2
+[WUI] on_enter Workout 1
+[AM] Set id 14 at 226976
+[SENSORS_SYNC][sample] x:24     y:-68   z:563   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:32     y:-39   z:583   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:28     y:-51   z:559   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:-54   z:577   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:38     y:-48   z:585   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:31     y:-31   z:575   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:28     y:-49   z:577   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:30     y:-55   z:579   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:28     y:-76   z:579   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:35     y:-59   z:587   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:39     y:-71   z:584   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:38     y:-78   z:574   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:-80   z:575   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:39     y:-84   z:575   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:39     y:-72   z:567   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:36     y:-76   z:568   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:33     y:-57   z:575   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:17     y:-100  z:575   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:46     y:-70   z:568   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:-73   z:563   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:51     y:-48   z:587   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-9     y:-63   z:593   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:28     y:-65   z:606   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:9      y:-63   z:587   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:23     y:-63   z:609   ir:0    red:0   green:517887    agc:[87480,1,0,0,0,0]
+[WUI] on_background Workout mode
+[WUI] on_background Workout 1
+[WUI] on_enter Sport
+[AM] Set id 12 at 216177
+[WORKOUT_RAWDATA] START (36)
+-I- [WORKOUT_RAWDATA] set status: 1 (Start) at 1688982505
+[AM] Set id 33 at 216177
+[TRIG] stop clock
+[TRIG] New frequency = 50 Hz (half period = 10 ms)
+[WORKOUT_RAWDATA] is_silent = 0
+[TRIG] start clock in mode 0
+[AM] Set id 26 at 216177
+==================================>
+workout_wpp_workout_start_stop
+state    = start
+category = 36
+start_ts = 1688982505
+stop_ts  = 0
+duration = 0
+<=================================
+-I- chronometer_start
+[AM] Set id 4 at 216181
+[ble_wpp_c_try_wake_up_app] ble_wpp_c_wuapp_ctx.-I- [HR_MEASURE][MODE] --> Request mode 3
+-D- [HR_state=0
+-D- [WUAPP] Service (re)discover, wait for service disc cb
+[AMEASURE][MODE] BURST_AUTO:0    BURST_MANUAL:1    CM] Set id 24 at 216178
+[BLE_WPP_C] Service Discover (attempts = 1)
+ONTINUOUS:1
+-I- [HR_MEASURE] Release HR MANUAL algo
+-I- [HR_MEASURE] Request HR CONTINUO-D- [ALGO_MANAGER][UPDATE] Stop HR algo
+-D- [ALGO_MANAGER][UPDATE] StopUS algo
+ HR_BURST algo
+-D- [ALGO_MANAGER][UPDATE] Stop WORN algo
+[TRIG] stop clock
+[ADXL362][adxl362_set_mode] ADXL362_LOCK
+[ADXL362][adxl362_set_mode] setPowerControl_ADXL362
+[ADXL362][adxl362_set_mode] _adxl362_handle
+[ADXL362][adxl362_set_mode] glance_reset
+[ADXL362] Set mode 2
+[ADXL362] Continuous measure mode OFF
+[ADXL362] ID_1: 0xAD
+[ADXL362] ID_2: 0x1D
+[ADXL362] ID_3: 0xF2
+[max8614x][state] stopped
+activity_subcat=36
+[max8614x][state] released
+[WORKOUT_RAWDATA] is_silent = 0
+[TRIG] start clock in mode 0
+-D- [ALGO_MANAGER][UPDATE] Start HR algo
+-D- [ALGO_MANAGER][UPDATE] Start WORN algo
+[TRIG] stop clock
+[ADXL362][adxl362_set_mode] ADXL362_LOCK
+[ADXL362][adxl362_set_mode] setPowerControl_ADXL362
+[ADXL362][adxl362_set_mode] _adxl362_handle
+[ADXL362][adxl362_set_mode] glance_reset
+[ADXL362] Set mode 1
+[ADXL362] Continuous measure mode ON
+[ADXL362] ID_1: 0xAD
+[ADXL362] ID_2: 0x1D
+[ADXL362] ID_3: 0xF2
+[AM] Set id 18 at 217976
+[WUI] on_enter Sport Chrono
+[VIB] Ignore vib request - current vib has higher prio (1 / 3)
+[max8614x] waited VDD for 1 ms
+[AM] Set id 20 at 216186
+[WPP] cmd_type=0x142/0x142
+[WPP] [WPP] WPP_CMD_WORKOUT_STATUS
+[WPP_LITE] tx complete (process_continue = 0 | nb slots = 2)
+[WPP LITE CLIENT] Received cmd 0x413d (6 bytes)
+014100020000
+[WPP] WPP_CMD_WORKOUT_START
+
+process_response_cmd_workout_start
+gps_status = 0
+[AM] Defuse id 24
+[max8614x] DAC calibration time 225 ms
+[max8614x][state] requested
+[max8614x][state] configured 0
+[max8614x][state] started
+[WORKOUT_RAWDATA] is_silent = 0
+[TRIG] start clock in mode 0
+[SENSORS_SYNC][sample] x:-17    y:-108  z:556   ir:0    red:0   green:187904    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-26    y:-76   z:548   ir:0    red:0   green:220198    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-15    y:-32   z:556   ir:0    red:0   green:252189    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:-39   z:560   ir:0    red:0   green:284687    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:-63   z:569   ir:0    red:0   green:316717    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-26    y:-70   z:567   ir:0    red:0   green:348997    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:-60   z:558   ir:0    red:0   green:381258    agc:[67554,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:3      y:-52   z:552   ir:0    red:0   green:413154    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:4      y:-76   z:564   ir:0    red:0   green:445303    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:-88   z:552   ir:0    red:0   green:453185    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:-62   z:544   ir:0    red:0   green:452197    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:-31   z:547   ir:0    red:0   green:450823    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:6      y:-28   z:543   ir:0    red:0   green:449611    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:-56   z:535   ir:0    red:0   green:448338    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-29    y:-39   z:539   ir:0    red:0   green:446670    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:-24   z:551   ir:0    red:0   green:443916    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:3      y:-23   z:574   ir:0    red:0   green:440659    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:-38   z:571   ir:0    red:0   green:437962    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:-40   z:588   ir:0    red:0   green:435698    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-1     y:-72   z:608   ir:0    red:0   green:433497    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-2     y:-22   z:631   ir:0    red:0   green:429124    agc:[67554,1,0,0,0,0]
+[AM] Set id 26 at 216178
+[WORKOUT_RAWDATA] raw_data recording 1/1200 !
+[AM] Set id 33 at 216178
+[AM] Set id 12 at 216178
+[AM]12@216178|33@216178|26@216178|4@216181|20@216186|1@216211|19@216600|18@217976|14@226976|
+[AM]12@216178|33@216178|26@216178|4@216181|20@216186|1@216211|19@216600|18@217976|14@226976|
+[WUI] on_background Sport
+[WUI] on_background Sport Chrono
+[AM] Defuse id 14
+[AM] Set id 12 at 216179
+[WORKOUT_RAWDATA] raw_data recording 2/1200 !
+[AM] Set id 33 at 216179
+[AM] Set id 26 at 216179
+[AM]26@216179|33@216179|12@216179|4@216181|20@216186|1@216211|19@216600|18@217976|
+[SENSORS_SYNC][sample] x:-8     y:84    z:580   ir:0    red:0   green:424630    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:135   z:550   ir:0    red:0   green:425778    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:55    z:568   ir:0    red:0   green:420951    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-10    y:-64   z:617   ir:0    red:0   green:417983    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:-76   z:558   ir:0    red:0   green:409116    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:3      y:8     z:519   ir:0    red:0   green:412436    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-40    y:72    z:535   ir:0    red:0   green:445437    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-49    y:77    z:552   ir:0    red:0   green:477965    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:12     y:8     z:583   ir:0    red:0   green:490542    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:8      y:-44   z:567   ir:0    red:0   green:485158    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-28    y:-15   z:584   ir:0    red:0   green:480744    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-33    y:25    z:561   ir:0    red:0   green:480163    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:24     y:17    z:536   ir:0    red:0   green:480425    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:46     y:10    z:566   ir:0    red:0   green:477380    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-44    y:96    z:571   ir:0    red:0   green:489806    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-64    y:96    z:563   ir:0    red:0   green:494714    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-31    y:56    z:555   ir:0    red:0   green:489838    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:29    z:550   ir:0    red:0   green:487255    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:-44   z:583   ir:0    red:0   green:485013    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-10    y:-56   z:572   ir:0    red:0   green:483226    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-36    y:10    z:585   ir:0    red:0   green:481174    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-45    y:52    z:566   ir:0    red:0   green:481068    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-25    y:-12   z:558   ir:0    red:0   green:480700    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-25    y:-7    z:577   ir:0    red:0   green:479988    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-40    y:16    z:569   ir:0    red:0   green:479620    agc:[67554,1,0,0,0,0]
+[AM]26@216179|33@216179|12@216179|4@216181|20@216186|1@216211|19@216600|18@217976|
+[AM] Set id 14 at 226978
+[AM] Defuse id 14
+[AM] Set id 14 at 226978
+[AM] Defuse id 14
+[SENSORS_SYNC][sample] x:-34    y:39    z:560   ir:0    red:0   green:480046    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-41    y:8     z:575   ir:0    red:0   green:480164    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-58    y:7     z:580   ir:0    red:0   green:480361    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-45    y:1     z:560   ir:0    red:0   green:480570    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:1     z:547   ir:0    red:0   green:480731    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:-6    z:558   ir:0    red:0   green:480717    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-40    y:52    z:560   ir:0    red:0   green:480457    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-64    y:105   z:555   ir:0    red:0   green:480943    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-73    y:103   z:543   ir:0    red:0   green:479096    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-39    y:16    z:552   ir:0    red:0   green:478064    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:-51   z:547   ir:0    red:0   green:476518    agc:[67554,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:-32    y:-24   z:536   ir:0    red:0   green:476014    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-40    y:47    z:537   ir:0    red:0   green:475786    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-37    y:87    z:559   ir:0    red:0   green:475157    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-50    y:68    z:574   ir:0    red:0   green:473889    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-41    y:52    z:566   ir:0    red:0   green:473228    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-29    y:-12   z:553   ir:0    red:0   green:472876    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-23    y:33    z:568   ir:0    red:0   green:471921    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:77    z:575   ir:0    red:0   green:470938    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-50    y:57    z:577   ir:0    red:0   green:470059    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-40    y:32    z:568   ir:0    red:0   green:469586    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-17    y:84    z:556   ir:0    red:0   green:468683    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-55    y:89    z:568   ir:0    red:0   green:467618    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-68    y:55    z:572   ir:0    red:0   green:461224    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-64    y:-14   z:563   ir:0    red:0   green:458384    agc:[67554,1,0,0,0,0]
+[AM] Set id 14 at 226979
+[AM] Defuse id 14
+[AM] Set id 26 at 216180
+[WORKOUT_RAWDATA] raw_data recording 3/1200 !
+[AM] Set id 33 at 216180
+[AM] Set id 12 at 216180
+[AM]12@216180|33@216180|26@216180|4@216181|20@216186|1@216211|19@216600|18@217976|
+[SENSORS_SYNC][sample] x:-61    y:25    z:543   ir:0    red:0   green:457788    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-61    y:20    z:560   ir:0    red:0   green:455977    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-63    y:25    z:536   ir:0    red:0   green:453321    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-74    y:7     z:523   ir:0    red:0   green:449947    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-96    y:-12   z:560   ir:0    red:0   green:446524    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-98    y:-24   z:583   ir:0    red:0   green:444766    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-87    y:1     z:584   ir:0    red:0   green:443484    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-72    y:13    z:551   ir:0    red:0   green:444691    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-72    y:10    z:528   ir:0    red:0   green:444240    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-49    y:-3    z:555   ir:0    red:0   green:445032    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-57    y:-19   z:568   ir:0    red:0   green:445233    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-80    y:-23   z:559   ir:0    red:0   green:445898    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-87    y:-12   z:536   ir:0    red:0   green:446449    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-98    y:-30   z:537   ir:0    red:0   green:446716    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-101   y:-60   z:545   ir:0    red:0   green:447387    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-87    y:-83   z:548   ir:0    red:0   green:447733    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-68    y:-104  z:542   ir:0    red:0   green:447395    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-55    y:-55   z:528   ir:0    red:0   green:447291    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-57    y:-15   z:508   ir:0    red:0   green:448217    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-127   y:-65   z:511   ir:0    red:0   green:448990    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-144   y:-96   z:551   ir:0    red:0   green:449891    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-153   y:-108  z:588   ir:0    red:0   green:450641    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-153   y:-92   z:584   ir:0    red:0   green:451199    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-141   y:-96   z:560   ir:0    red:0   green:451384    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-104   y:-91   z:560   ir:0    red:0   green:451780    agc:[67554,1,0,0,0,0]
+[AM]12@216180|33@216180|26@216180|4@216181|20@216186|1@216211|19@216600|18@217976|
+[AM] Set id 14 at 226979
+[AM] Defuse id 14
+[SENSORS_SYNC][sample] x:-84    y:-41   z:568   ir:0    red:0   green:451988    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-128   y:-25   z:566   ir:0    red:0   green:452255    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-196   y:-79   z:560   ir:0    red:0   green:452174    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-180   y:-116  z:563   ir:0    red:0   green:452480    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-136   y:-96   z:559   ir:0    red:0   green:452799    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-140   y:-88   z:542   ir:0    red:0   green:453445    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-160   y:-140  z:543   ir:0    red:0   green:453585    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-152   y:-147  z:526   ir:0    red:0   green:453540    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-151   y:-191  z:505   ir:0    red:0   green:453251    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-153   y:-214  z:487   ir:0    red:0   green:453202    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-167   y:-187  z:499   ir:0    red:0   green:453683    agc:[67554,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:-185   y:-81   z:496   ir:0    red:0   green:454137    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-197   y:-86   z:480   ir:0    red:0   green:454150    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-185   y:-86   z:483   ir:0    red:0   green:454257    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-177   y:-112  z:496   ir:0    red:0   green:453929    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-196   y:-119  z:511   ir:0    red:0   green:454130    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-189   y:-195  z:521   ir:0    red:0   green:454398    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-217   y:-224  z:529   ir:0    red:0   green:454289    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-205   y:-207  z:496   ir:0    red:0   green:454606    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-208   y:-195  z:473   ir:0    red:0   green:454928    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-202   y:-188  z:492   ir:0    red:0   green:455222    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-161   y:-184  z:510   ir:0    red:0   green:455890    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-173   y:-214  z:494   ir:0    red:0   green:456546    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-177   y:-192  z:483   ir:0    red:0   green:456697    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-161   y:-159  z:481   ir:0    red:0   green:456561    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-164   y:-179  z:492   ir:0    red:0   green:456852    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-186   y:-190  z:488   ir:0    red:0   green:457202    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-183   y:-167  z:480   ir:0    red:0   green:457206    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-180   y:-184  z:471   ir:0    red:0   green:457058    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-168   y:-206  z:480   ir:0    red:0   green:457520    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-168   y:-192  z:487   ir:0    red:0   green:457821    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-153   y:-155  z:476   ir:0    red:0   green:458396    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-144   y:-159  z:479   ir:0    red:0   green:458453    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-132   y:-127  z:492   ir:0    red:0   green:458752    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-127   y:-143  z:496   ir:0    red:0   green:458970    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-120   y:-152  z:496   ir:0    red:0   green:459355    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-116   y:-143  z:516   ir:0    red:0   green:459576    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-100   y:-155  z:529   ir:0    red:0   green:459668    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-84    y:-163  z:515   ir:0    red:0   green:459765    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-80    y:-172  z:515   ir:0    red:0   green:459990    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-90    y:-169  z:527   ir:0    red:0   green:459919    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-100   y:-185  z:528   ir:0    red:0   green:459497    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-116   y:-199  z:529   ir:0    red:0   green:458805    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-154   y:-227  z:527   ir:0    red:0   green:458070    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-172   y:-259  z:513   ir:0    red:0   green:457539    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-153   y:-291  z:518   ir:0    red:0   green:456958    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-129   y:-294  z:524   ir:0    red:0   green:456581    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-113   y:-249  z:520   ir:0    red:0   green:456413    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-88    y:-222  z:504   ir:0    red:0   green:456297    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-84    y:-203  z:496   ir:0    red:0   green:456142    agc:[67554,1,0,0,0,0]
+[AM] Set id 12 at 216181
+[WORKOUT_RAWDATA] raw_data recording 4/1200 !
+[AM] Set id 33 at 216181
+[AM] Set id 26 at 216181
+[AM]26@216181|33@216181|12@216181|4@216181|20@216186|1@216211|19@216600|18@217976|
+[AM]26@216181|33@216181|12@216181|4@216181|20@216186|1@216211|19@216600|18@217976|
+[SENSORS_SYNC][sample] x:-93    y:-203  z:496   ir:0    red:0   green:456066    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-95    y:-231  z:480   ir:0    red:0   green:456147    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-121   y:-272  z:468   ir:0    red:0   green:456396    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-152   y:-304  z:464   ir:0    red:0   green:456875    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-170   y:-316  z:455   ir:0    red:0   green:457366    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-191   y:-300  z:451   ir:0    red:0   green:457741    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-244   y:-304  z:439   ir:0    red:0   green:460117    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-317   y:-291  z:416   ir:0    red:0   green:460974    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-480   y:-339  z:388   ir:0    red:0   green:461900    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-688   y:-376  z:385   ir:0    red:0   green:462152    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-815   y:-374  z:371   ir:0    red:0   green:461283    agc:[67554,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:-881   y:-369  z:374   ir:0    red:0   green:457683    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-815   y:-414  z:391   ir:0    red:0   green:454482    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-525   y:-374  z:369   ir:0    red:0   green:454872    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-276   y:-264  z:383   ir:0    red:0   green:457573    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-169   y:-207  z:391   ir:0    red:0   green:460016    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-25    y:-176  z:439   ir:0    red:0   green:461838    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:163    y:-207  z:531   ir:0    red:0   green:462653    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:297    y:-156  z:571   ir:0    red:0   green:463192    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:295    y:-164  z:608   ir:0    red:0   green:462950    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:323    y:-233  z:630   ir:0    red:0   green:462269    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:431    y:-208  z:595   ir:0    red:0   green:461491    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:483    y:-199  z:510   ir:0    red:0   green:461029    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:462    y:-115  z:446   ir:0    red:0   green:460458    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:432    y:-9    z:412   ir:0    red:0   green:459487    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:396    y:49    z:433   ir:0    red:0   green:458332    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:356    y:42    z:438   ir:0    red:0   green:457629    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:295    y:0     z:441   ir:0    red:0   green:457076    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:264    y:-60   z:448   ir:0    red:0   green:457087    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:249    y:-124  z:455   ir:0    red:0   green:457029    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:227    y:-201  z:468   ir:0    red:0   green:456569    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:147    y:-321  z:543   ir:0    red:0   green:456154    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-26    y:-455  z:582   ir:0    red:0   green:459991    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-132   y:-543  z:499   ir:0    red:0   green:461955    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-216   y:-792  z:462   ir:0    red:0   green:462933    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-367   y:-926  z:473   ir:0    red:0   green:463646    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-391   y:-876  z:423   ir:0    red:0   green:463716    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-402   y:-723  z:299   ir:0    red:0   green:463898    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-497   y:-633  z:153   ir:0    red:0   green:464054    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-528   y:-547  z:65    ir:0    red:0   green:466131    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-484   y:-432  z:27    ir:0    red:0   green:467470    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-434   y:-348  z:-8    ir:0    red:0   green:467319    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-385   y:-280  z:-17   ir:0    red:0   green:467453    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-353   y:-243  z:-20   ir:0    red:0   green:468010    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-328   y:-152  z:-45   ir:0    red:0   green:468570    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-340   y:-127  z:-89   ir:0    red:0   green:469254    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-369   y:-105  z:-136  ir:0    red:0   green:470161    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-404   y:-159  z:-128  ir:0    red:0   green:470892    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-440   y:-247  z:-127  ir:0    red:0   green:471455    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-488   y:-336  z:-172  ir:0    red:0   green:472305    agc:[67554,1,0,0,0,0]
+[AM] Set id 26 at 216182
+[WORKOUT_RAWDATA] raw_data recording 5/1200 !
+[AM] Set id 33 at 216182
+[AM] Set id 12 at 216182
+[AM]12@216182|33@216182|26@216182|20@216186|1@216211|19@216600|18@217976|
+[AM]12@216182|33@216182|26@216182|20@216186|1@216211|19@216600|18@217976|
+[AM] Set id 26 at 216182
+[SENSORS_SYNC][sample] x:-639   y:-408  z:-184  ir:0    red:0   green:473187    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-809   y:-495  z:-112  ir:0    red:0   green:472978    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-696   y:-609  z:-25   ir:0    red:0   green:470933    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-527   y:-767  z:67    ir:0    red:0   green:469570    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-490   y:-812  z:137   ir:0    red:0   green:468971    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-317   y:-648  z:271   ir:0    red:0   green:467902    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-72    y:-446  z:480   ir:0    red:0   green:467048    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-12    y:-488  z:711   ir:0    red:0   green:466576    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-52    y:-496  z:718   ir:0    red:0   green:466603    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:-504  z:591   ir:0    red:0   green:466220    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:143    y:-433  z:476   ir:0    red:0   green:465797    agc:[67554,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:246    y:-387  z:435   ir:0    red:0   green:466176    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:299    y:-319  z:459   ir:0    red:0   green:466788    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:316    y:-196  z:476   ir:0    red:0   green:466894    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:299    y:-108  z:467   ir:0    red:0   green:467199    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:289    y:-102  z:463   ir:0    red:0   green:467578    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:295    y:-152  z:451   ir:0    red:0   green:467677    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:300    y:-152  z:438   ir:0    red:0   green:467047    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:286    y:-152  z:436   ir:0    red:0   green:466077    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:262    y:-159  z:468   ir:0    red:0   green:465431    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:240    y:-175  z:510   ir:0    red:0   green:465046    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:255    y:-207  z:524   ir:0    red:0   green:464775    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:228    y:-297  z:526   ir:0    red:0   green:464328    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:195    y:-359  z:529   ir:0    red:0   green:463604    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:63     y:-440  z:561   ir:0    red:0   green:462506    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-143   y:-628  z:575   ir:0    red:0   green:461251    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-249   y:-851  z:464   ir:0    red:0   green:461156    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-356   y:-1102 z:296   ir:0    red:0   green:461738    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-461   y:-1143 z:112   ir:0    red:0   green:459762    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-569   y:-913  z:-7    ir:0    red:0   green:459558    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-642   y:-718  z:-17   ir:0    red:0   green:461030    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-640   y:-547  z:3     ir:0    red:0   green:462300    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-557   y:-399  z:30    ir:0    red:0   green:463027    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-458   y:-303  z:-4    ir:0    red:0   green:463434    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-420   y:-169  z:-47   ir:0    red:0   green:464322    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-409   y:-86   z:-55   ir:0    red:0   green:465607    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-354   y:-116  z:-57   ir:0    red:0   green:466484    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-313   y:-203  z:-80   ir:0    red:0   green:465842    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-316   y:-259  z:-85   ir:0    red:0   green:465037    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-308   y:-227  z:-76   ir:0    red:0   green:465213    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-295   y:-228  z:-65   ir:0    red:0   green:465759    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-285   y:-231  z:-33   ir:0    red:0   green:466630    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-265   y:-217  z:23    ir:0    red:0   green:468047    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-264   y:-204  z:115   ir:0    red:0   green:469327    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-272   y:-231  z:214   ir:0    red:0   green:469952    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-276   y:-406  z:291   ir:0    red:0   green:470161    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-353   y:-515  z:419   ir:0    red:0   green:470844    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-420   y:-583  z:579   ir:0    red:0   green:470960    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-449   y:-827  z:790   ir:0    red:0   green:470197    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-580   y:-1155 z:1048  ir:0    red:0   green:468122    agc:[67554,1,0,0,0,0]
+[AM] Set id 26 at 216183
+[AM] Set id 12 at 216183
+[WORKOUT_RAWDATA] raw_data recording 6/1200 !
+[AM] Set id 33 at 216183
+[AM]33@216183|12@216183|26@216183|20@216186|1@216211|19@216600|18@217976|
+[AM]33@216183|12@216183|26@216183|20@216186|1@216211|19@216600|18@217976|
+[SENSORS_SYNC][sample] x:-672   y:-1209 z:1127  ir:0    red:0   green:464314    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-580   y:-967  z:1057  ir:0    red:0   green:461551    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-448   y:-704  z:910   ir:0    red:0   green:461519    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-365   y:-531  z:755   ir:0    red:0   green:463225    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-281   y:-463  z:536   ir:0    red:0   green:465767    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-184   y:-396  z:323   ir:0    red:0   green:467700    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-90    y:-275  z:147   ir:0    red:0   green:469237    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:-190  z:27    ir:0    red:0   green:470458    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:127    y:-124  z:-100  ir:0    red:0   green:471402    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:219    y:-167  z:-180  ir:0    red:0   green:471449    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:287    y:-103  z:-200  ir:0    red:0   green:471386    agc:[67554,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[HR_MEASURE][CONTINUOUS] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:303    y:48    z:-193  ir:0    red:0   green:472638    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:300    y:165   z:-125  ir:0    red:0   green:474002    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:244    y:113   z:-141  ir:0    red:0   green:474691    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:183    y:33    z:-168  ir:0    red:0   green:475079    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:174    y:-25   z:-157  ir:0    red:0   green:475891    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:172    y:-40   z:-105  ir:0    red:0   green:476686    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:123    y:-89   z:-29   ir:0    red:0   green:477601    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:19     y:-167  z:124   ir:0    red:0   green:478108    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:17     y:-280  z:376   ir:0    red:0   green:477956    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-68    y:-367  z:559   ir:0    red:0   green:476481    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-197   y:-536  z:723   ir:0    red:0   green:473696    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-191   y:-559  z:896   ir:0    red:0   green:470280    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-269   y:-440  z:1001  ir:0    red:0   green:469411    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-263   y:-364  z:998   ir:0    red:0   green:469665    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-226   y:-376  z:920   ir:0    red:0   green:470529    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-233   y:-383  z:838   ir:0    red:0   green:471826    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-232   y:-384  z:828   ir:0    red:0   green:473375    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-232   y:-350  z:822   ir:0    red:0   green:474836    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-199   y:-287  z:822   ir:0    red:0   green:475977    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-125   y:-296  z:871   ir:0    red:0   green:476332    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-97    y:-359  z:921   ir:0    red:0   green:476277    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-143   y:-452  z:999   ir:0    red:0   green:475606    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-157   y:-543  z:1123  ir:0    red:0   green:475070    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-165   y:-617  z:1208  ir:0    red:0   green:474337    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-217   y:-576  z:1102  ir:0    red:0   green:473276    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-272   y:-465  z:884   ir:0    red:0   green:472171    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-289   y:-312  z:696   ir:0    red:0   green:472250    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-276   y:-204  z:575   ir:0    red:0   green:473093    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-221   y:-208  z:438   ir:0    red:0   green:473630    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-154   y:-231  z:268   ir:0    red:0   green:473785    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-95    y:-184  z:142   ir:0    red:0   green:474596    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-37    y:-75   z:51    ir:0    red:0   green:475988    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:12     y:-15   z:6     ir:0    red:0   green:477505    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:56     y:53    z:-9    ir:0    red:0   green:479285    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:80     y:100   z:16    ir:0    red:0   green:480890    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:102    y:104   z:31    ir:0    red:0   green:481940    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:121    y:72    z:15    ir:0    red:0   green:482589    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:142    y:63    z:-1    ir:0    red:0   green:483295    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:131    y:57    z:-20   ir:0    red:0   green:484211    agc:[67554,1,0,0,0,0]
+[WORKOUT_RAWDATA] raw_data recording 7/1200 !
+[AM] Set id 33 at 216184
+[AM] Set id 12 at 216184
+[AM] Set id 26 at 216184
+[AM]26@216184|12@216184|33@216184|20@216186|1@216211|19@216600|18@217976|
+[AM]26@216184|12@216184|33@216184|20@216186|1@216211|19@216600|18@217976|
+[SENSORS_SYNC][sample] x:73     y:82    z:3     ir:0    red:0   green:485455    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:27     y:89    z:35    ir:0    red:0   green:486581    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-25    y:89    z:67    ir:0    red:0   green:487840    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-89    y:64    z:119   ir:0    red:0   green:489028    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-146   y:8     z:161   ir:0    red:0   green:489639    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-197   y:-96   z:207   ir:0    red:0   green:489215    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-255   y:-174  z:259   ir:0    red:0   green:488860    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-298   y:-200  z:376   ir:0    red:0   green:489253    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-377   y:-268  z:523   ir:0    red:0   green:489574    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-461   y:-368  z:656   ir:0    red:0   green:488531    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-544   y:-519  z:799   ir:0    red:0   green:485530    agc:[67554,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[HR_MEASURE][CONTINUOUS] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:-601   y:-494  z:897   ir:0    red:0   green:483208    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-580   y:-488  z:966   ir:0    red:0   green:482030    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-537   y:-574  z:915   ir:0    red:0   green:481433    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-449   y:-670  z:879   ir:0    red:0   green:481656    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-336   y:-528  z:847   ir:0    red:0   green:482685    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-237   y:-383  z:771   ir:0    red:0   green:483856    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-173   y:-284  z:689   ir:0    red:0   green:484519    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-137   y:-217  z:632   ir:0    red:0   green:484877    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-68    y:-148  z:601   ir:0    red:0   green:484586    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:44     y:-168  z:574   ir:0    red:0   green:483801    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:175    y:-160  z:539   ir:0    red:0   green:483166    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:235    y:-79   z:500   ir:0    red:0   green:482124    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:307    y:-6    z:504   ir:0    red:0   green:480599    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:395    y:29    z:551   ir:0    red:0   green:478489    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:416    y:-24   z:531   ir:0    red:0   green:477167    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:359    y:-84   z:511   ir:0    red:0   green:476315    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:297    y:-119  z:499   ir:0    red:0   green:475788    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:216    y:-132  z:497   ir:0    red:0   green:475421    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:84     y:-143  z:518   ir:0    red:0   green:474783    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-108   y:-179  z:543   ir:0    red:0   green:475196    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-321   y:-268  z:527   ir:0    red:0   green:477355    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-433   y:-403  z:486   ir:0    red:0   green:478934    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-488   y:-526  z:480   ir:0    red:0   green:477840    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-548   y:-451  z:519   ir:0    red:0   green:477874    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-580   y:-312  z:532   ir:0    red:0   green:478926    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-552   y:-224  z:495   ir:0    red:0   green:480606    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-516   y:-152  z:488   ir:0    red:0   green:482300    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-490   y:-89   z:499   ir:0    red:0   green:483918    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-505   y:-15   z:460   ir:0    red:0   green:485293    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-504   y:53    z:391   ir:0    red:0   green:486457    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-528   y:49    z:351   ir:0    red:0   green:487352    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-554   y:-15   z:316   ir:0    red:0   green:487713    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-585   y:-62   z:316   ir:0    red:0   green:487817    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-629   y:-87   z:327   ir:0    red:0   green:487574    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-637   y:-116  z:352   ir:0    red:0   green:486974    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-583   y:-120  z:379   ir:0    red:0   green:486398    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-564   y:-147  z:409   ir:0    red:0   green:486026    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-474   y:-179  z:443   ir:0    red:0   green:486447    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-328   y:-156  z:467   ir:0    red:0   green:487777    agc:[67554,1,0,0,0,0]
+[AM] Set id 26 at 216185
+[AM] Set id 12 at 216185
+[WORKOUT_RAWDATA] raw_data recording 8/1200 !
+[AM] Set id 33 at 216185
+[AM]33@216185|12@216185|26@216185|20@216186|1@216211|19@216600|18@217976|
+[AM]33@216185|12@216185|26@216185|20@216186|1@216211|19@216600|18@217976|
+[SENSORS_SYNC][sample] x:-200   y:-278  z:551   ir:0    red:0   green:489050    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-128   y:-433  z:615   ir:0    red:0   green:490084    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-2     y:-319  z:591   ir:0    red:0   green:491290    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:145    y:-51   z:592   ir:0    red:0   green:492223    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:243    y:58    z:651   ir:0    red:0   green:491761    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:257    y:9     z:670   ir:0    red:0   green:491046    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:227    y:-88   z:655   ir:0    red:0   green:489047    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:288    y:-192  z:691   ir:0    red:0   green:487264    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:380    y:-203  z:727   ir:0    red:0   green:485730    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:401    y:-70   z:696   ir:0    red:0   green:484219    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:376    y:-1    z:644   ir:0    red:0   green:482835    agc:[67554,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[HR_MEASURE][CONTINUOUS] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:371    y:-38   z:644   ir:0    red:0   green:482331    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:391    y:-112  z:633   ir:0    red:0   green:482706    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:360    y:-131  z:617   ir:0    red:0   green:482991    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:319    y:-102  z:603   ir:0    red:0   green:482874    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:268    y:-120  z:604   ir:0    red:0   green:482851    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:177    y:-112  z:611   ir:0    red:0   green:482912    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:76     y:-115  z:630   ir:0    red:0   green:483258    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:1      y:-115  z:623   ir:0    red:0   green:483196    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-60    y:-184  z:575   ir:0    red:0   green:481794    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-186   y:-302  z:545   ir:0    red:0   green:479861    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-289   y:-319  z:524   ir:0    red:0   green:478765    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-369   y:-312  z:496   ir:0    red:0   green:477524    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-460   y:-337  z:463   ir:0    red:0   green:475853    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-504   y:-281  z:408   ir:0    red:0   green:475566    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-484   y:-167  z:359   ir:0    red:0   green:476529    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-504   y:-166  z:391   ir:0    red:0   green:477345    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-588   y:-227  z:415   ir:0    red:0   green:477543    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-625   y:-200  z:390   ir:0    red:0   green:477897    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-559   y:-108  z:345   ir:0    red:0   green:478865    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-498   y:0     z:351   ir:0    red:0   green:480050    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-514   y:8     z:380   ir:0    red:0   green:481376    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-537   y:-31   z:408   ir:0    red:0   green:482251    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-580   y:-118  z:403   ir:0    red:0   green:482353    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-601   y:-211  z:404   ir:0    red:0   green:481794    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-544   y:-236  z:428   ir:0    red:0   green:481083    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-519   y:-174  z:440   ir:0    red:0   green:481232    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-520   y:-103  z:439   ir:0    red:0   green:481664    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-432   y:-88   z:446   ir:0    red:0   green:482059    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-317   y:-233  z:504   ir:0    red:0   green:482354    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-305   y:-313  z:511   ir:0    red:0   green:482650    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-258   y:-268  z:468   ir:0    red:0   green:483617    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-144   y:-177  z:467   ir:0    red:0   green:484751    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-33    y:-211  z:523   ir:0    red:0   green:485790    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:-211  z:563   ir:0    red:0   green:486536    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:23     y:-123  z:568   ir:0    red:0   green:487702    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:96     y:-88   z:607   ir:0    red:0   green:488907    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:225    y:-163  z:679   ir:0    red:0   green:490311    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:307    y:-159  z:656   ir:0    red:0   green:491441    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:284    y:-144  z:635   ir:0    red:0   green:491940    agc:[67554,1,0,0,0,0]
+[WORKOUT_RAWDATA] raw_data recording 9/1200 !
+[AM] Set id 33 at 216186
+[AM] Set id 12 at 216186
+[AM] Set id 26 at 216186
+[AM]26@216186|12@216186|33@216186|20@216186|1@216211|19@216600|18@217976|
+[AM]26@216186|12@216186|33@216186|20@216186|1@216211|19@216600|18@217976|
+[SENSORS_SYNC][sample] x:297    y:-127  z:655   ir:0    red:0   green:492170    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:335    y:-97   z:679   ir:0    red:0   green:492493    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:335    y:-28   z:639   ir:0    red:0   green:492864    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:291    y:20    z:615   ir:0    red:0   green:493038    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:255    y:-55   z:636   ir:0    red:0   green:493149    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:235    y:-156  z:675   ir:0    red:0   green:492757    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:211    y:-152  z:680   ir:0    red:0   green:491970    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:176    y:-152  z:675   ir:0    red:0   green:491232    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:108    y:-191  z:680   ir:0    red:0   green:490559    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-28    y:-203  z:675   ir:0    red:0   green:489837    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-101   y:-235  z:646   ir:0    red:0   green:488508    agc:[67554,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[HR_MEASURE][CONTINUOUS] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:-140   y:-259  z:604   ir:0    red:0   green:487245    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-258   y:-259  z:550   ir:0    red:0   green:486385    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-393   y:-227  z:499   ir:0    red:0   green:486095    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-447   y:-192  z:423   ir:0    red:0   green:485973    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-433   y:-199  z:385   ir:0    red:0   green:485044    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-463   y:-220  z:399   ir:0    red:0   green:484522    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-482   y:-187  z:424   ir:0    red:0   green:484563    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-484   y:-135  z:419   ir:0    red:0   green:484893    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-488   y:-76   z:403   ir:0    red:0   green:485292    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-469   y:-47   z:404   ir:0    red:0   green:485872    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-441   y:-41   z:439   ir:0    red:0   green:486505    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-420   y:-63   z:454   ir:0    red:0   green:487621    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-457   y:-92   z:465   ir:0    red:0   green:488522    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-493   y:-97   z:465   ir:0    red:0   green:489038    agc:[67554,1,0,0,0,0]
+[WUI] on_exit Sport notif
+[WUI] on_foreground Sport
+[WUI] on_foreground Sport Chrono
+[SENSORS_SYNC][sample] x:-473   y:-137  z:435   ir:0    red:0   green:488857    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-429   y:-180  z:423   ir:0    red:0   green:488596    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-448   y:-206  z:428   ir:0    red:0   green:488306    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-447   y:-184  z:440   ir:0    red:0   green:488801    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-353   y:-183  z:472   ir:0    red:0   green:489632    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-231   y:-198  z:499   ir:0    red:0   green:490746    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-129   y:-176  z:507   ir:0    red:0   green:491887    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-58    y:-169  z:503   ir:0    red:0   green:492988    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:3      y:-163  z:553   ir:0    red:0   green:494068    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:73     y:-108  z:583   ir:0    red:0   green:494776    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:79     y:-76   z:608   ir:0    red:0   green:495244    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:62     y:-96   z:614   ir:0    red:0   green:495283    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:63     y:-112  z:631   ir:0    red:0   green:494975    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:40     y:-86   z:643   ir:0    red:0   green:494708    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:-70   z:652   ir:0    red:0   green:494712    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-26    y:-25   z:643   ir:0    red:0   green:494669    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:48    z:625   ir:0    red:0   green:494541    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-1     y:164   z:643   ir:0    red:0   green:494939    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:14     y:301   z:630   ir:0    red:0   green:495521    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:338   z:622   ir:0    red:0   green:496692    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:17     y:365   z:624   ir:0    red:0   green:497255    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:33     y:356   z:615   ir:0    red:0   green:496688    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:44     y:353   z:627   ir:0    red:0   green:494502    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:38     y:356   z:614   ir:0    red:0   green:491103    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:9      y:200   z:528   ir:0    red:0   green:487886    agc:[67554,1,0,0,0,0]
+[AM] Set id 26 at 216187
+[AM] Set id 12 at 216187
+[WORKOUT_RAWDATA] raw_data recording 10/1200 !
+[AM] Set id 33 at 216187
+[AM]33@216187|12@216187|26@216187|1@216211|19@216600|18@217976|
+[AM]33@216187|12@216187|26@216187|1@216211|19@216600|18@217976|
+[BLE_WPP_C] Service Discover (attempts = 2)
+[SENSORS_SYNC][sample] x:-25    y:-22   z:451   ir:0    red:0   green:486866    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-49    y:-211  z:494   ir:0    red:0   green:486839    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-47    y:-401  z:572   ir:0    red:0   green:486857    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-15    y:-492  z:603   ir:0    red:0   green:486866    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-79    y:-539  z:577   ir:0    red:0   green:487339    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-80    y:-548  z:494   ir:0    red:0   green:488308    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:100    y:-504  z:423   ir:0    red:0   green:488727    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:127    y:-527  z:412   ir:0    red:0   green:488312    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:19     y:-511  z:440   ir:0    red:0   green:487774    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:-460  z:463   ir:0    red:0   green:487422    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:-409  z:455   ir:0    red:0   green:487267    agc:[67554,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[HR_MEASURE][CONTINUOUS] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:-9     y:-444  z:432   ir:0    red:0   green:487450    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-9     y:-483  z:420   ir:0    red:0   green:488121    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-36    y:-556  z:440   ir:0    red:0   green:488956    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-57    y:-639  z:448   ir:0    red:0   green:489514    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-72    y:-576  z:447   ir:0    red:0   green:490204    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-136   y:-444  z:435   ir:0    red:0   green:490871    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-178   y:-295  z:424   ir:0    red:0   green:491447    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-205   y:-203  z:439   ir:0    red:0   green:491983    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-127   y:-63   z:511   ir:0    red:0   green:492784    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-136   y:117   z:523   ir:0    red:0   green:493272    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-121   y:196   z:515   ir:0    red:0   green:493641    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:245   z:593   ir:0    red:0   green:494338    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:120    y:333   z:624   ir:0    red:0   green:495782    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:112    y:418   z:615   ir:0    red:0   green:497864    agc:[67554,1,0,0,0,0]
+[AM] Set id 20 at 216196
+[SENSORS_SYNC][sample] x:108    y:450   z:552   ir:0    red:0   green:499377    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:152    y:388   z:520   ir:0    red:0   green:500619    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:159    y:322   z:526   ir:0    red:0   green:500880    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:57     y:249   z:528   ir:0    red:0   green:499917    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-40    y:189   z:518   ir:0    red:0   green:498247    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-84    y:172   z:511   ir:0    red:0   green:497012    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-138   y:207   z:540   ir:0    red:0   green:496738    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-121   y:268   z:566   ir:0    red:0   green:496994    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-50    y:272   z:579   ir:0    red:0   green:497579    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:14     y:287   z:587   ir:0    red:0   green:497454    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:0      y:295   z:615   ir:0    red:0   green:495881    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-50    y:276   z:572   ir:0    red:0   green:493926    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-56    y:149   z:480   ir:0    red:0   green:494169    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-48    y:20    z:432   ir:0    red:0   green:495151    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-122   y:-143  z:462   ir:0    red:0   green:495608    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-121   y:-240  z:595   ir:0    red:0   green:495783    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-68    y:-260  z:651   ir:0    red:0   green:495910    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-36    y:-345  z:577   ir:0    red:0   green:496257    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:3      y:-359  z:511   ir:0    red:0   green:496505    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-40    y:-436  z:540   ir:0    red:0   green:496974    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:39     y:-486  z:612   ir:0    red:0   green:497022    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:102    y:-459  z:584   ir:0    red:0   green:497195    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:88     y:-420  z:531   ir:0    red:0   green:497495    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:39     y:-388  z:544   ir:0    red:0   green:498166    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:3      y:-403  z:575   ir:0    red:0   green:498922    agc:[67554,1,0,0,0,0]
+[WORKOUT_RAWDATA] raw_data recording 11/1200 !
+[AM] Set id 33 at 216188
+[AM] Set id 12 at 216188
+[AM] Set id 26 at 216188
+[AM]26@216188|12@216188|33@216188|20@216196|1@216211|19@216600|18@217976|
+[AM]26@216188|12@216188|33@216188|20@216196|1@216211|19@216600|18@217976|
+[SENSORS_SYNC][sample] x:-18    y:-387  z:574   ir:0    red:0   green:499241    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-49    y:-451  z:547   ir:0    red:0   green:499614    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-66    y:-515  z:513   ir:0    red:0   green:499753    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-92    y:-536  z:495   ir:0    red:0   green:499950    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-111   y:-480  z:487   ir:0    red:0   green:500015    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-132   y:-382  z:457   ir:0    red:0   green:500127    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-140   y:-239  z:423   ir:0    red:0   green:500488    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-132   y:-121  z:463   ir:0    red:0   green:500989    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-125   y:-19   z:457   ir:0    red:0   green:501036    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-73    y:89    z:392   ir:0    red:0   green:500388    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-57    y:168   z:400   ir:0    red:0   green:500179    agc:[67554,1,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[HR_MEASURE][CONTINUOUS] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:23     y:260   z:561   ir:0    red:0   green:500149    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:92     y:354   z:627   ir:0    red:0   green:499671    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:36     y:345   z:574   ir:0    red:0   green:498915    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:288   z:481   ir:0    red:0   green:498628    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:20     y:249   z:467   ir:0    red:0   green:499557    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:48     y:269   z:563   ir:0    red:0   green:500784    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-39    y:327   z:651   ir:0    red:0   green:502324    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-141   y:359   z:655   ir:0    red:0   green:503494    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-146   y:328   z:600   ir:0    red:0   green:503461    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-125   y:305   z:560   ir:0    red:0   green:502859    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-113   y:345   z:531   ir:0    red:0   green:502525    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-84    y:328   z:519   ir:0    red:0   green:501865    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-89    y:304   z:515   ir:0    red:0   green:500656    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-113   y:281   z:543   ir:0    red:0   green:499870    agc:[67554,1,0,0,0,0]
+[SENSORS_SYNC][sample] x:-89    y:210   z:558   ir:0    red:0   green:472064    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-36    y:36    z:511   ir:0    red:0   green:439424    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-64    y:-76   z:499   ir:0    red:0   green:406784    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-119   y:-51   z:505   ir:0    red:0   green:374272    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-79    y:-67   z:486   ir:0    red:0   green:345107    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-48    y:-180  z:467   ir:0    red:0   green:345663    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-56    y:-278  z:556   ir:0    red:0   green:346267    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:-254  z:574   ir:0    red:0   green:347696    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:89     y:-300  z:543   ir:0    red:0   green:348011    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:12     y:-408  z:568   ir:0    red:0   green:347498    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:-435  z:599   ir:0    red:0   green:347453    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:28     y:-407  z:615   ir:0    red:0   green:347643    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:28     y:-465  z:607   ir:0    red:0   green:347253    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:-492  z:551   ir:0    red:0   green:346754    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:-440  z:511   ir:0    red:0   green:346769    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-32    y:-406  z:536   ir:0    red:0   green:347062    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-36    y:-422  z:567   ir:0    red:0   green:347366    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-34    y:-422  z:558   ir:0    red:0   green:347584    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-45    y:-366  z:563   ir:0    red:0   green:347916    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-104   y:-238  z:543   ir:0    red:0   green:348356    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-136   y:-204  z:515   ir:0    red:0   green:348292    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-157   y:-204  z:472   ir:0    red:0   green:347809    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-136   y:-102  z:447   ir:0    red:0   green:347465    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-80    y:52    z:460   ir:0    red:0   green:347463    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-24    y:213   z:451   ir:0    red:0   green:347135    agc:[108378,2,0,0,0,0]
+[AM] Set id 26 at 216189
+[AM] Set id 12 at 216189
+[WORKOUT_RAWDATA] raw_data recording 12/1200 !
+[AM] Set id 33 at 216189
+[AM]33@216189|12@216189|26@216189|20@216196|1@216211|19@216600|18@217976|
+[AM]33@216189|12@216189|26@216189|20@216196|1@216211|19@216600|18@217976|
+[SENSORS_SYNC][sample] x:-20    y:290   z:446   ir:0    red:0   green:347190    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:317   z:467   ir:0    red:0   green:347916    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:0      y:353   z:536   ir:0    red:0   green:348524    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-33    y:338   z:560   ir:0    red:0   green:348582    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-88    y:282   z:540   ir:0    red:0   green:348385    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-113   y:225   z:528   ir:0    red:0   green:348623    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-135   y:153   z:551   ir:0    red:0   green:349221    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-185   y:120   z:583   ir:0    red:0   green:350379    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-260   y:100   z:584   ir:0    red:0   green:351509    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-305   y:196   z:574   ir:0    red:0   green:352205    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-255   y:285   z:543   ir:0    red:0   green:352459    agc:[108378,2,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[HR_MEASURE][CONTINUOUS] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:-165   y:244   z:528   ir:0    red:0   green:352684    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-109   y:113   z:499   ir:0    red:0   green:352714    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-153   y:42    z:504   ir:0    red:0   green:352678    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-194   y:25    z:520   ir:0    red:0   green:352490    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-113   y:-16   z:542   ir:0    red:0   green:352897    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-63    y:-33   z:572   ir:0    red:0   green:354000    agc:[108378,2,0,0,0,0]
+[HR_MEASURE][CONTINUOUS] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:-153   y:-38   z:600   ir:0    red:0   green:355154    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-250   y:-14   z:572   ir:0    red:0   green:355018    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-245   y:-22   z:527   ir:0    red:0   green:354608    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-143   y:-15   z:560   ir:0    red:0   green:354950    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-52    y:-24   z:579   ir:0    red:0   green:355934    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-73    y:-72   z:585   ir:0    red:0   green:356212    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-90    y:-80   z:535   ir:0    red:0   green:355952    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-71    y:-19   z:519   ir:0    red:0   green:355306    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-52    y:2     z:553   ir:0    red:0   green:355360    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-56    y:-27   z:583   ir:0    red:0   green:354894    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-109   y:-31   z:543   ir:0    red:0   green:354591    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-105   y:-23   z:531   ir:0    red:0   green:354013    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-73    y:-52   z:502   ir:0    red:0   green:353047    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-66    y:-64   z:518   ir:0    red:0   green:352357    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-95    y:-79   z:543   ir:0    red:0   green:352277    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-113   y:-60   z:547   ir:0    red:0   green:352300    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-116   y:-60   z:536   ir:0    red:0   green:352453    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-109   y:-44   z:519   ir:0    red:0   green:352617    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-113   y:-40   z:513   ir:0    red:0   green:352698    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-127   y:-38   z:518   ir:0    red:0   green:352568    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-120   y:-9    z:531   ir:0    red:0   green:352234    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-90    y:16    z:543   ir:0    red:0   green:351683    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-73    y:52    z:543   ir:0    red:0   green:350906    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-66    y:73    z:536   ir:0    red:0   green:350081    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-61    y:89    z:545   ir:0    red:0   green:349149    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-57    y:100   z:572   ir:0    red:0   green:348281    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-55    y:152   z:575   ir:0    red:0   green:347706    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-49    y:144   z:561   ir:0    red:0   green:347316    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-25    y:111   z:551   ir:0    red:0   green:347051    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:56     y:103   z:547   ir:0    red:0   green:346075    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:14     y:60    z:560   ir:0    red:0   green:344872    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:12     y:111   z:592   ir:0    red:0   green:344678    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-119   y:215   z:536   ir:0    red:0   green:344932    agc:[108378,2,0,0,0,0]
+[WORKOUT_RAWDATA] raw_data recording 13/1200 !
+[AM] Set id 33 at 216190
+[AM] Set id 12 at 216190
+[AM] Set id 26 at 216190
+[AM]26@216190|12@216190|33@216190|20@216196|1@216211|19@216600|18@217976|
+[AM]26@216190|12@216190|33@216190|20@216196|1@216211|19@216600|18@217976|
+[AM] Set id 14 at 226989
+[SENSORS_SYNC][sample] x:-168   y:212   z:560   ir:0    red:0   green:345159    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:17     y:55    z:547   ir:0    red:0   green:345572    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:108    y:23    z:543   ir:0    red:0   green:345317    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:24     y:36    z:582   ir:0    red:0   green:345116    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-61    y:113   z:571   ir:0    red:0   green:345409    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:97    z:540   ir:0    red:0   green:345108    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:3      y:49    z:547   ir:0    red:0   green:344249    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-77    y:66    z:572   ir:0    red:0   green:341832    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-45    y:77    z:567   ir:0    red:0   green:340030    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-24    y:72    z:583   ir:0    red:0   green:339564    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-32    y:64    z:591   ir:0    red:0   green:338988    agc:[108378,2,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:-25    y:61    z:580   ir:0    red:0   green:338466    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-36    y:64    z:556   ir:0    red:0   green:338472    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-25    y:77    z:552   ir:0    red:0   green:339201    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-29    y:85    z:575   ir:0    red:0   green:340344    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-36    y:88    z:574   ir:0    red:0   green:341723    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-26    y:101   z:553   ir:0    red:0   green:342803    agc:[108378,2,0,0,0,0]
+[HR_MEASURE][CONTINUOUS] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:-29    y:92    z:560   ir:0    red:0   green:343626    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-45    y:106   z:568   ir:0    red:0   green:344592    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-52    y:100   z:555   ir:0    red:0   green:345411    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-72    y:100   z:561   ir:0    red:0   green:346102    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-88    y:74    z:560   ir:0    red:0   green:346603    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-82    y:73    z:563   ir:0    red:0   green:346894    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-97    y:90    z:566   ir:0    red:0   green:346798    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-97    y:84    z:567   ir:0    red:0   green:346358    agc:[108378,2,0,0,0,0]
+[AM] Defuse id 14
+[AM] Set id 26 at 216191
+[AM] Set id 12 at 216191
+[WORKOUT_RAWDATA] raw_data recording 14/1200 !
+[AM] Set id 33 at 216191
+[AM]33@216191|12@216191|26@216191|20@216196|1@216211|19@216600|18@217976|
+[SENSORS_SYNC][sample] x:-108   y:84    z:558   ir:0    red:0   green:346219    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-89    y:89    z:575   ir:0    red:0   green:346105    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-63    y:64    z:577   ir:0    red:0   green:345907    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-57    y:64    z:567   ir:0    red:0   green:345719    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-37    y:58    z:536   ir:0    red:0   green:345663    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-36    y:56    z:519   ir:0    red:0   green:345698    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-47    y:56    z:518   ir:0    red:0   green:345869    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-49    y:61    z:496   ir:0    red:0   green:346165    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-41    y:80    z:487   ir:0    red:0   green:346454    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-40    y:79    z:495   ir:0    red:0   green:346806    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-41    y:89    z:521   ir:0    red:0   green:347219    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-58    y:104   z:536   ir:0    red:0   green:347758    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-60    y:89    z:544   ir:0    red:0   green:348236    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-61    y:100   z:572   ir:0    red:0   green:348518    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-79    y:77    z:595   ir:0    red:0   green:348763    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-68    y:55    z:614   ir:0    red:0   green:348930    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-57    y:52    z:623   ir:0    red:0   green:348757    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-55    y:52    z:619   ir:0    red:0   green:348596    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-49    y:72    z:608   ir:0    red:0   green:348581    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-37    y:63    z:600   ir:0    red:0   green:348613    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-32    y:71    z:582   ir:0    red:0   green:348733    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-39    y:89    z:560   ir:0    red:0   green:349047    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-47    y:87    z:536   ir:0    red:0   green:349594    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-49    y:113   z:529   ir:0    red:0   green:350194    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-40    y:119   z:513   ir:0    red:0   green:350586    agc:[108378,2,0,0,0,0]
+[AM]33@216191|12@216191|26@216191|20@216196|1@216211|19@216600|18@217976|
+-I- [WORKOUT_RAWDATA] set status: 2 (Pause) at 1688982519
+[AM] Set id 33 at 216191
+-I- [SWIM][POSTPROCESS] lap=0
+activity_subcat=36
+==================================>
+workout_wpp_workout_start_stop
+state    = start
+category = 36
+start_ts = 1688982505
+stop_ts  = 0
+duration = 0
+<=================================
+[AM] Set id 18 at 216490
+[WUI] on_background Sport
+[WUI] on_backgroun[AM] Set id 4 at 216195
+[ble_wpp_c_try_wake_up_app] ble_wpp_d Sport Chrono
+[WUI] on_enter Shortcut pause
+c_wuapp_ctx.state=0
+[AM] Defuse id 20
+-D- [WUAPP] Service (re)discover, wait for service disc cb
+[AM] Set id 24 at 216192
+[BLE_WPP_C] Service Discover (attempts = 1)
+[AM] Set id 20 at 216200
+[WPP] cmd_type=0x142/0x142
+[WPP] [WPP] WPP_CMD_WORKOUT_STATUS
+[WPP_LITE] tx complete (process_continue = 0 | nb slots = 2)
+[WPP LITE CLIENT] Received cmd 0x413d (6 bytes)
+014100020000
+[WPP] WPP_CMD_WORKOUT_START
+
+process_response_cmd_workout_start
+gps_status = 0
+[AM] Defuse id 24
+[SENSORS_SYNC][sample] x:-32    y:121   z:503   ir:0    red:0   green:350865    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:109   z:489   ir:0    red:0   green:351148    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-23    y:104   z:496   ir:0    red:0   green:351534    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-29    y:87    z:519   ir:0    red:0   green:351982    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-36    y:72    z:532   ir:0    red:0   green:352465    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-23    y:61    z:536   ir:0    red:0   green:352563    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-10    y:80    z:529   ir:0    red:0   green:352551    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:74    z:543   ir:0    red:0   green:352513    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-23    y:93    z:575   ir:0    red:0   green:352542    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-25    y:93    z:588   ir:0    red:0   green:352558    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-32    y:84    z:593   ir:0    red:0   green:352524    agc:[108378,2,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:-40    y:88    z:595   ir:0    red:0   green:352415    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-55    y:109   z:608   ir:0    red:0   green:352102    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-56    y:100   z:595   ir:0    red:0   green:351995    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-48    y:111   z:587   ir:0    red:0   green:352112    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-32    y:106   z:575   ir:0    red:0   green:352183    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-17    y:104   z:560   ir:0    red:0   green:352322    agc:[108378,2,0,0,0,0]
+[HR_MEASURE][CONTINUOUS] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:-18    y:84    z:540   ir:0    red:0   green:352519    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-9     y:89    z:531   ir:0    red:0   green:352725    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:77    z:534   ir:0    red:0   green:352816    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:74    z:521   ir:0    red:0   green:352895    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:69    z:508   ir:0    red:0   green:352975    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:82    z:515   ir:0    red:0   green:353088    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-5     y:81    z:504   ir:0    red:0   green:353255    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:87    z:526   ir:0    red:0   green:353504    agc:[108378,2,0,0,0,0]
+[AM] Set id 14 at 226991
+[WORKOUT_RAWDATA] raw_data recording 15/1200 !
+[AM] Set id 33 at 216192
+[AM] Set id 12 at 216192
+[AM] Set id 26 at 216192
+[AM]26@216192|12@216192|33@216192|4@216195|20@216200|1@216211|18@216490|19@216600|14@226991|
+[SENSORS_SYNC][sample] x:-18    y:97    z:553   ir:0    red:0   green:353661    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:95    z:572   ir:0    red:0   green:353821    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:72    z:563   ir:0    red:0   green:353763    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-5     y:69    z:579   ir:0    red:0   green:353555    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-9     y:79    z:608   ir:0    red:0   green:353402    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:80    z:606   ir:0    red:0   green:353384    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-15    y:98    z:585   ir:0    red:0   green:353487    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:105   z:574   ir:0    red:0   green:353616    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-18    y:97    z:568   ir:0    red:0   green:353953    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:106   z:551   ir:0    red:0   green:354268    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:89    z:544   ir:0    red:0   green:354622    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:98    z:556   ir:0    red:0   green:354856    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:85    z:558   ir:0    red:0   green:355132    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-1     y:93    z:553   ir:0    red:0   green:355460    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:1      y:71    z:540   ir:0    red:0   green:355735    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-1     y:80    z:543   ir:0    red:0   green:355961    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-7     y:77    z:543   ir:0    red:0   green:356198    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:74    z:536   ir:0    red:0   green:356525    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-17    y:85    z:529   ir:0    red:0   green:356677    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-15    y:63    z:524   ir:0    red:0   green:356814    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-15    y:61    z:531   ir:0    red:0   green:356863    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:68    z:551   ir:0    red:0   green:356716    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-18    y:77    z:556   ir:0    red:0   green:356618    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:71    z:560   ir:0    red:0   green:356569    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:72    z:575   ir:0    red:0   green:356579    agc:[108378,2,0,0,0,0]
+[AM]26@216192|12@216192|33@216192|4@216195|20@216200|1@216211|18@216490|19@216600|14@226991|
+[WUI] on_background Shortcut pause
+[WUI] on_enter Pause selection
+[SENSORS_SYNC][sample] x:-10    y:85    z:591   ir:0    red:0   green:356504    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-15    y:80    z:608   ir:0    red:0   green:356453    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-26    y:87    z:614   ir:0    red:0   green:356822    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-23    y:60    z:587   ir:0    red:0   green:357632    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-10    y:50    z:560   ir:0    red:0   green:358360    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:8      y:72    z:551   ir:0    red:0   green:358612    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:12     y:64    z:556   ir:0    red:0   green:358707    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:16     y:68    z:560   ir:0    red:0   green:358624    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:16     y:58    z:551   ir:0    red:0   green:358698    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:27     y:52    z:529   ir:0    red:0   green:358534    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:24     y:50    z:531   ir:0    red:0   green:357972    agc:[108378,2,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:1      y:68    z:553   ir:0    red:0   green:357519    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:61    z:551   ir:0    red:0   green:357139    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:64    z:551   ir:0    red:0   green:356851    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:73    z:571   ir:0    red:0   green:356362    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-9     y:72    z:580   ir:0    red:0   green:355860    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-9     y:76    z:587   ir:0    red:0   green:355307    agc:[108378,2,0,0,0,0]
+[HR_MEASURE][CONTINUOUS] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:6      y:80    z:577   ir:0    red:0   green:354714    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-7     y:68    z:579   ir:0    red:0   green:354103    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-10    y:76    z:583   ir:0    red:0   green:353722    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-12    y:77    z:575   ir:0    red:0   green:353372    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:68    z:572   ir:0    red:0   green:352929    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:16     y:64    z:560   ir:0    red:0   green:352512    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:9      y:73    z:561   ir:0    red:0   green:352271    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:73    z:563   ir:0    red:0   green:351965    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:0      y:89    z:560   ir:0    red:0   green:351573    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:87    z:556   ir:0    red:0   green:350984    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:19     y:65    z:550   ir:0    red:0   green:350592    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:61    z:551   ir:0    red:0   green:350550    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-1     y:84    z:548   ir:0    red:0   green:350705    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:3      y:92    z:548   ir:0    red:0   green:351037    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:3      y:104   z:559   ir:0    red:0   green:351528    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:81    z:551   ir:0    red:0   green:352044    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-1     y:72    z:551   ir:0    red:0   green:352349    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-18    y:87    z:560   ir:0    red:0   green:352181    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-32    y:100   z:567   ir:0    red:0   green:351959    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-25    y:90    z:558   ir:0    red:0   green:351823    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:113   z:547   ir:0    red:0   green:351914    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:103   z:537   ir:0    red:0   green:352157    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:104   z:552   ir:0    red:0   green:352287    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-23    y:113   z:552   ir:0    red:0   green:352400    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-7     y:121   z:551   ir:0    red:0   green:352235    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-28    y:130   z:564   ir:0    red:0   green:351631    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-29    y:120   z:560   ir:0    red:0   green:350818    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-23    y:108   z:556   ir:0    red:0   green:350002    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:100   z:553   ir:0    red:0   green:349197    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-15    y:113   z:543   ir:0    red:0   green:348469    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-15    y:119   z:540   ir:0    red:0   green:347850    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:127   z:526   ir:0    red:0   green:347463    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-23    y:125   z:531   ir:0    red:0   green:347036    agc:[108378,2,0,0,0,0]
+[AM] Set id 26 at 216193
+[AM] Set id 12 at 216193
+[WORKOUT_RAWDATA] raw_data recording 16/1200 !
+[AM] Set id 33 at 216193
+[AM]33@216193|12@216193|26@216193|4@216195|20@216200|1@216211|18@216490|19@216600|14@226991|
+[AM]33@216193|12@216193|26@216193|4@216195|20@216200|1@216211|18@216490|19@216600|14@226991|
+[AM] Defuse id 14
+[SENSORS_SYNC][sample] x:-24    y:136   z:540   ir:0    red:0   green:346619    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-36    y:144   z:542   ir:0    red:0   green:346460    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-41    y:141   z:527   ir:0    red:0   green:346433    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-49    y:149   z:526   ir:0    red:0   green:346295    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-52    y:160   z:537   ir:0    red:0   green:346223    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-41    y:162   z:547   ir:0    red:0   green:346287    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-28    y:136   z:542   ir:0    red:0   green:346347    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-15    y:143   z:543   ir:0    red:0   green:346359    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:144   z:558   ir:0    red:0   green:346578    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-15    y:153   z:559   ir:0    red:0   green:347070    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-16    y:133   z:556   ir:0    red:0   green:347571    agc:[108378,2,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:-16    y:66    z:535   ir:0    red:0   green:347987    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:80    z:545   ir:0    red:0   green:348318    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:105   z:563   ir:0    red:0   green:348540    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:8      y:114   z:559   ir:0    red:0   green:348715    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:1      y:101   z:556   ir:0    red:0   green:348884    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-1     y:129   z:542   ir:0    red:0   green:348802    agc:[108378,2,0,0,0,0]
+[HR_MEASURE][CONTINUOUS] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:12     y:106   z:551   ir:0    red:0   green:348747    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:17     y:88    z:559   ir:0    red:0   green:348690    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:16     y:96    z:559   ir:0    red:0   green:348730    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:97    z:560   ir:0    red:0   green:348827    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:3      y:90    z:563   ir:0    red:0   green:349192    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:0      y:79    z:560   ir:0    red:0   green:349510    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:24     y:84    z:566   ir:0    red:0   green:349806    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:31     y:71    z:568   ir:0    red:0   green:349958    agc:[108378,2,0,0,0,0]
+[AM] Set id 14 at 226993
+[WORKOUT_RAWDATA] raw_data recording 17/1200 !
+[AM] Set id 33 at 216194
+[AM] Set id 12 at 216194
+[AM] Set id 26 at 216194
+[AM]26@216194|12@216194|33@216194|4@216195|20@216200|1@216211|18@216490|19@216600|14@226993|
+[SENSORS_SYNC][sample] x:17     y:80    z:563   ir:0    red:0   green:350211    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:19     y:80    z:558   ir:0    red:0   green:350665    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:22     y:73    z:551   ir:0    red:0   green:351109    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:23     y:80    z:551   ir:0    red:0   green:351428    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:80    z:556   ir:0    red:0   green:351581    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:9      y:84    z:550   ir:0    red:0   green:351356    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:20     y:72    z:559   ir:0    red:0   green:351230    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:8      y:63    z:561   ir:0    red:0   green:350904    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:8      y:64    z:556   ir:0    red:0   green:350531    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:12     y:79    z:547   ir:0    red:0   green:350203    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:16     y:69    z:559   ir:0    red:0   green:349868    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:11     y:87    z:569   ir:0    red:0   green:349666    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-1     y:72    z:563   ir:0    red:0   green:349895    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:6      y:77    z:571   ir:0    red:0   green:350186    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:14     y:74    z:583   ir:0    red:0   green:350390    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:12     y:73    z:591   ir:0    red:0   green:350615    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:9      y:72    z:583   ir:0    red:0   green:350968    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:0      y:69    z:584   ir:0    red:0   green:351336    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:73    z:568   ir:0    red:0   green:351681    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:71    z:555   ir:0    red:0   green:351851    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:84    z:560   ir:0    red:0   green:351635    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:80    z:560   ir:0    red:0   green:351516    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-1     y:88    z:545   ir:0    red:0   green:351630    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:6      y:96    z:543   ir:0    red:0   green:351895    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:7      y:84    z:537   ir:0    red:0   green:351927    agc:[108378,2,0,0,0,0]
+[AM]26@216194|12@216194|33@216194|4@216195|20@216200|1@216211|18@216490|19@216600|14@226993|
+[WUI] on_background Pause selection
+activity_subcat=36
+==================================>
+workout_wpp_workout_start_stop
+state    = stop
+category = 36
+start_ts = 1688982505
+stop_ts  = 1688982522
+duration = 17
+<=================================
+[AM] Defuse id 12
+[WORKOUT_RAWDATA] STO[AM] Set id 4 at 216198
+[ble_wpp_c_try_wake_up_app] ble_wpp_c_wuapp_ctx.state=0P (36)
+-I- [WORKOUT_RAWDATA] set status: 0 (Stop) at 1688982522
+
+[AM] Defuse id 20
+-D- [WUAPP] Service (re)discover, wait for service disc cb
+[AM] Set id 24 at 216195
+[BLE_WPP_C] Service Discover (attempts = 1)
+[AM] Defuse id 33
+[TRIG] stop clock
+[TRIG] New frequency = 25 Hz (half period = 20 ms)
+[WORKOUT_RAWDATA] is_silent = 0
+[TRIG] start clock in mode 0
+[AM] Set id 26 at 216194
+-I- chronometer_stop
+activity_subcat=36
+-I- [HR_MEASURE][MODE] --> Release mode 3
+-D- [HR_MEASURE][MODE] BURST_AUTO:0    BURST_MANUAL:1    CONTINUOUS:0
+-I- [HR_MEASURE] Release HR CONTINUOUS algo
+-I- [-D- [ALGO_MANAGER][UPDATE] Stop HR algo
+-D- [ALGO_MANAGER][UPDATE] StopHR_MEASURE] Request HR MANUAL algo
+ WORN algo
+[TRIG] stop clock
+[ADXL362][adxl362_set_mode] ADXL362_LOCK
+[ADXL362][adxl362_set_mode] setPowerControl_ADXL362
+[ADXL362][adxl362_set_mode] _adxl362_handle
+[ADXL362][adxl362_set_mode] glance_reset
+[ADXL362] Set mode 2
+[ADXL362] Continuous measure mode OFF
+[ADXL362] ID_1: 0xAD
+[ADXL362] ID_2: 0x1D
+[ADXL362] ID_3: 0xF2
+[max8614x][state] stopped
+[AM] Defuse id 18
+-I- [WORKOUT_RAWDATA] activity 0 : rawdata saved
+[max8614x][state] released
+[WORKOUT_RAWDATA] is_silent = 0
+[TRIG] start clock in mode 0
+-D- [ALGO_MANAGER][UPDATE] Start HR algo
+-D- [ALGO_MANAGER][UPDATE] Start HR_BURST algo
+-D- [ALGO_MANAGER][UPDATE] Start WORN algo
+[TRIG] stop clock
+[ADXL362][adxl362_set_mode] ADXL362_LOCK
+[ADXL362][adxl362_set_mode] setPowerControl_ADXL362
+[ADXL362][adxl362_set_mode] _adxl362_handle
+[ADXL362][adxl362_set_mode] glance_reset
+[ADXL362] Set mode 1
+[ADXL362] Continuous measure mode ON
+[ADXL362] ID_1: 0xAD
+[ADXL362] ID_2: 0x1D
+[ADXL362] ID_3: 0xF2
+[AM] Set id 20 at 216203
+[max8614x] waited VDD for 1 ms
+[WPP LITE CLIENT] Received cmd 0x413e (0 bytes)
+
+[WPP] WPP_CMD_WORKOUT_STOP
+
+process_response_cmd_workout_stop
+[AM] Defuse id 24
+-I- [DBLIB][SUBS S] 0
+[WUI] on_enter Sport congrats
+[VIB] Ignore vib request - current vib has higher prio (1 / 3)
+[max8614x] DAC calibration time 225 ms
+[max8614x][state] requested
+[max8614x][state] configured 0
+[max8614x][state] started
+[WORKOUT_RAWDATA] is_silent = 0
+[TRIG] start clock in mode 0
+[AM] Set id 26 at 216195
+[AM]26@216195|4@216198|20@216203|1@216211|19@216600|14@226993|
+[SPORT CONGRATS]  => Go to summary
+[WUI] on_background Sport congrats
+[WUI] on_enter Sport summary
+[WUI] on_enter Sport Chrono
+[AM] Defuse id 14
+[SENSORS_SYNC][sample] x:6      y:81    z:572   ir:0    red:0   green:188236    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:9      y:97    z:583   ir:0    red:0   green:220742    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:116   z:567   ir:0    red:0   green:253255    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:14     y:116   z:558   ir:0    red:0   green:285754    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:173   z:569   ir:0    red:0   green:318101    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-4     y:100   z:540   ir:0    red:0   green:350340    agc:[108378,2,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:12     y:132   z:564   ir:0    red:0   green:371724    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-85    y:200   z:537   ir:0    red:0   green:370329    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:14     y:79    z:519   ir:0    red:0   green:367634    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-58    y:148   z:600   ir:0    red:0   green:363176    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:24     y:100   z:543   ir:0    red:0   green:359683    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:14     y:132   z:583   ir:0    red:0   green:358393    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-25    y:143   z:614   ir:0    red:0   green:359664    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-72    y:85    z:563   ir:0    red:0   green:362371    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:135   z:572   ir:0    red:0   green:365994    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:48     y:119   z:543   ir:0    red:0   green:367246    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:25     y:68    z:590   ir:0    red:0   green:365596    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-36    y:80    z:556   ir:0    red:0   green:361369    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:67     y:128   z:532   ir:0    red:0   green:359469    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-28    y:97    z:579   ir:0    red:0   green:360088    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:14     y:104   z:608   ir:0    red:0   green:360223    agc:[108378,2,0,0,0,0]
+[AM] Set id 26 at 216196
+[AM]26@216196|4@216198|20@216203|1@216211|19@216600|
+[SENSORS_SYNC][sample] x:-13    y:199   z:556   ir:0    red:0   green:358810    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-66    y:149   z:595   ir:0    red:0   green:358374    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:115    y:109   z:608   ir:0    red:0   green:359754    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-13    y:184   z:560   ir:0    red:0   green:360176    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:56     y:81    z:540   ir:0    red:0   green:357762    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:64     y:152   z:595   ir:0    red:0   green:399422    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-20    y:177   z:563   ir:0    red:0   green:431841    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:64     y:148   z:601   ir:0    red:0   green:464368    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:15     y:236   z:567   ir:0    red:0   green:439296    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:17     y:263   z:430   ir:0    red:0   green:406656    agc:[108378,2,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:80     y:218   z:491   ir:0    red:0   green:374272    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:78     y:329   z:516   ir:0    red:0   green:341632    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:48     y:298   z:475   ir:0    red:0   green:309120    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:160    y:333   z:419   ir:0    red:0   green:276736    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:118    y:400   z:407   ir:0    red:0   green:244224    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:159    y:361   z:215   ir:0    red:0   green:211712    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:182    y:408   z:287   ir:0    red:0   green:179200    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:224    y:360   z:249   ir:0    red:0   green:146816    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:340    y:352   z:264   ir:0    red:0   green:114176    agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:359    y:336   z:313   ir:0    red:0   green:81536     agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:387    y:353   z:264   ir:0    red:0   green:73807     agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:343    y:369   z:184   ir:0    red:0   green:81541     agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:327    y:372   z:188   ir:0    red:0   green:91336     agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:305    y:383   z:124   ir:0    red:0   green:91961     agc:[108378,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:339    y:282   z:124   ir:0    red:0   green:97744     agc:[108378,2,0,0,0,0]
+[AM] Set id 26 at 216197
+[AM]26@216197|4@216198|20@216203|1@216211|19@216600|
+[SENSORS_SYNC][sample] x:355    y:396   z:15    ir:0    red:0   green:115143    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:396    y:442   z:62    ir:0    red:0   green:118072    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:364    y:397   z:14    ir:0    red:0   green:126557    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:307    y:313   z:17    ir:0    red:0   green:148511    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:367    y:458   z:36    ir:0    red:0   green:153543    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:342    y:370   z:87    ir:0    red:0   green:145127    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:369    y:456   z:113   ir:0    red:0   green:133469    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:391    y:336   z:134   ir:0    red:0   green:133380    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:396    y:304   z:112   ir:0    red:0   green:141520    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:352    y:314   z:188   ir:0    red:0   green:138670    agc:[123930,2,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:359    y:255   z:224   ir:0    red:0   green:149352    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:364    y:221   z:164   ir:0    red:0   green:171515    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:353    y:292   z:169   ir:0    red:0   green:204306    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:376    y:296   z:240   ir:0    red:0   green:236229    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:332    y:428   z:336   ir:0    red:0   green:232976    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:275    y:333   z:368   ir:0    red:0   green:229590    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:243    y:394   z:387   ir:0    red:0   green:232249    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:231    y:337   z:588   ir:0    red:0   green:227062    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:159    y:58    z:599   ir:0    red:0   green:229121    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:480    y:208   z:364   ir:0    red:0   green:217293    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:224    y:178   z:728   ir:0    red:0   green:240110    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:204    y:169   z:539   ir:0    red:0   green:236562    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:184    y:212   z:491   ir:0    red:0   green:242888    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:177    y:212   z:472   ir:0    red:0   green:245035    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:150    y:207   z:440   ir:0    red:0   green:246346    agc:[123930,2,0,0,0,0]
+[AM] Set id 26 at 216198
+[AM]26@216198|4@216198|20@216203|1@216211|19@216600|
+[SENSORS_SYNC][sample] x:111    y:207   z:457   ir:0    red:0   green:246232    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:96     y:194   z:487   ir:0    red:0   green:246041    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:127    y:201   z:495   ir:0    red:0   green:245445    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:150    y:217   z:540   ir:0    red:0   green:245076    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:148    y:234   z:532   ir:0    red:0   green:246047    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:3      y:241   z:552   ir:0    red:0   green:247294    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:282   z:524   ir:0    red:0   green:247014    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:4      y:276   z:508   ir:0    red:0   green:246884    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:12     y:272   z:518   ir:0    red:0   green:246520    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-8     y:306   z:496   ir:0    red:0   green:247572    agc:[123930,2,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:14     y:317   z:507   ir:0    red:0   green:248937    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:35     y:321   z:536   ir:0    red:0   green:249543    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:36     y:297   z:496   ir:0    red:0   green:249085    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:112    y:329   z:511   ir:0    red:0   green:248135    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:76     y:313   z:463   ir:0    red:0   green:248938    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:79     y:324   z:444   ir:0    red:0   green:249996    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:99     y:321   z:508   ir:0    red:0   green:250711    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:134    y:321   z:519   ir:0    red:0   green:250367    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:204    y:271   z:503   ir:0    red:0   green:250729    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:80     y:205   z:568   ir:0    red:0   green:250778    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:51     y:177   z:455   ir:0    red:0   green:250837    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:87     y:144   z:392   ir:0    red:0   green:250759    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-29    y:109   z:419   ir:0    red:0   green:250717    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-28    y:117   z:340   ir:0    red:0   green:247756    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:9      y:226   z:339   ir:0    red:0   green:244060    agc:[123930,2,0,0,0,0]
+[AM] Set id 26 at 216199
+[AM]26@216199|20@216203|1@216211|19@216600|
+[AM]26@216199|20@216203|1@216211|19@216600|
+[SENSORS_SYNC][sample] x:54     y:269   z:352   ir:0    red:0   green:240665    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:67     y:217   z:487   ir:0    red:0   green:239675    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:107    y:193   z:423   ir:0    red:0   green:242201    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:84     y:188   z:387   ir:0    red:0   green:245347    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:63     y:201   z:432   ir:0    red:0   green:246995    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:116    y:205   z:527   ir:0    red:0   green:250823    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:156    y:199   z:473   ir:0    red:0   green:251474    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:96     y:202   z:593   ir:0    red:0   green:251950    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:167    y:145   z:551   ir:0    red:0   green:251714    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:152    y:81    z:643   ir:0    red:0   green:251777    agc:[123930,2,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:339    y:26    z:675   ir:0    red:0   green:251415    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:350    y:26    z:713   ir:0    red:0   green:251188    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:198    y:-60   z:700   ir:0    red:0   green:250592    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:192    y:-79   z:559   ir:0    red:0   green:251481    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:172    y:-118  z:608   ir:0    red:0   green:243246    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:156    y:-145  z:691   ir:0    red:0   green:242961    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:96     y:-159  z:587   ir:0    red:0   green:245540    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:71     y:-156  z:574   ir:0    red:0   green:247620    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:161    y:-153  z:528   ir:0    red:0   green:248564    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:83     y:-142  z:454   ir:0    red:0   green:246891    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:155    y:-131  z:696   ir:0    red:0   green:237442    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:107    y:-115  z:543   ir:0    red:0   green:235810    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:228    y:-102  z:495   ir:0    red:0   green:235725    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:278    y:-135  z:590   ir:0    red:0   green:233199    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:206    y:-177  z:510   ir:0    red:0   green:229191    agc:[123930,2,0,0,0,0]
+[AM] Set id 26 at 216200
+[AM]26@216200|20@216203|1@216211|19@216600|
+[SENSORS_SYNC][sample] x:239    y:-112  z:345   ir:0    red:0   green:225563    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:188    y:-172  z:513   ir:0    red:0   green:232090    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:198    y:-230  z:536   ir:0    red:0   green:239798    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:204    y:-159  z:449   ir:0    red:0   green:243491    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:231    y:-190  z:508   ir:0    red:0   green:251841    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:204    y:-127  z:633   ir:0    red:0   green:251078    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:81     y:-89   z:464   ir:0    red:0   green:250825    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:327    y:-112  z:480   ir:0    red:0   green:253737    agc:[123930,2,0,0,0,0]
+[HR_MEASURE][BURST] display: 0bpm, store: 0bpm, worn:Yes, store:No, display:No
+[SENSORS_SYNC][sample] x:272    y:-56   z:535   ir:0    red:0   green:251140    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:164    y:-127  z:547   ir:0    red:0   green:249937    agc:[123930,2,0,0,0,0]
+[SLEEP_WAKE] non zer, updating median
+[SENSORS_SYNC][sample] x:228    y:-131  z:476   ir:0    red:0   green:247378    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:243    y:-238  z:462   ir:0    red:0   green:229520    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:248    y:-108  z:519   ir:0    red:0   green:211712    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:304    y:16    z:417   ir:0    red:0   green:179200    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:123    y:57    z:689   ir:0    red:0   green:172845    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:27     y:-41   z:625   ir:0    red:0   green:193265    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:151    y:87    z:568   ir:0    red:0   green:194142    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:152    y:90    z:537   ir:0    red:0   green:210620    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:110    y:-16   z:600   ir:0    red:0   green:212830    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:-10    y:-60   z:596   ir:0    red:0   green:215277    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:267    y:1     z:523   ir:0    red:0   green:218582    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:60     y:32    z:624   ir:0    red:0   green:225431    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:92     y:-55   z:574   ir:0    red:0   green:235866    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:75     y:-15   z:591   ir:0    red:0   green:233991    agc:[123930,2,0,0,0,0]
+[SENSORS_SYNC][sample] x:47     y:37    z:577   ir:0    red:0   green:227206    agc:[123930,2,0,0,0,0]
+[AM] Set id 26 at 216201
+[AM]26@216201|20@216203|1@216211|19@216600|
+[WUI] on_exit Sport Chrono
+[WUI] on_exit Sport summary
+[WUI] on_exit Shortcut pause
+[WUI] on_exit Sport Chrono
+[WUI] on_exit Sport
+[WUI] on_exit Workout 1
+[WUI] on_exit Workout mode
+[WUI] on_exit Workout
+[WUI] on_exit Menu carousel
+[AM] Defuse id 12
+[BOARD] OLED configure GPIO + Power OFF
+11:48:49
+-I- [HR_MEASURE][MODE] --> Release mode 2
+-D- [HR_MEASURE][MODE] BURST_AUTO:0    BURST_MANUAL:0    CONTINUOUS:0
+-I- [HR_MEASURE] Release HR MANUAL algo
+-D- [ALGO_MANAGER][UPDATE] Stop HR algo
+-D- [ALGO_MANAGER][UPDATE] Stop HR_BURST algo
+-D- [ALGO_MANAGER][UPDATE] Stop WORN algo
+[TRIG] stop clock
+[ADXL362][adxl362_set_mode] ADXL362_LOCK
+[ADXL362][adxl362_set_mode] setPowerControl_ADXL362
+[ADXL362][adxl362_set_mode] _adxl362_handle
+[ADXL362][adxl362_set_mode] glance_reset
+[ADXL362] Set mode 2
+[ADXL362] Continuous measure mode OFF
+[ADXL362] ID_1: 0xAD
+[ADXL362] ID_2: 0x1D
+[ADXL362] ID_3: 0xF2
+[max8614x][state] stopped
+[max8614x][state] released
+[WORKOUT_RAWDATA] is_silent = 0
+[TRIG] start clock in mode 0
+[max8614x] waited VDD for 1 ms
+[AM] Set id 26 at 216202
+[AM]26@216202|20@216203|1@216211|19@216600|
+[max8614x] waited VDD for 1 ms
+[AM] Set id 26 at 216203
+[AM]26@216203|20@216203|1@216211|19@216600|
+[AM] Set id 14 at 227002
+[AM]1@216211|19@216600|14@227002|
+[BLE_WPP_C] Service Discover (attempts = 2)
