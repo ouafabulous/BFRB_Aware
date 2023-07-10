@@ -21,6 +21,7 @@ def extract_data(data: str, line: str) -> int:
     else:
         return None
 
+
 # Check if the file name is provided as an argument
 if len(sys.argv) < 2:
     print("Please provide the file name to parse as an argument.")
@@ -35,7 +36,6 @@ parsed_heart_rate = []
 with open(input_file_path, 'r') as file:
     for line in file:
         if '[SENSORS_SYNC][sample]' in line:
-            print(line)
             extract_data('timestamp', line)
             t = extract_data('timestamp', line)
             x = extract_data('x', line)
