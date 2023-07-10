@@ -1,33 +1,10 @@
-import * as React from 'react'
+import React, { useState } from 'react'
+import detectCrisis from '../detectCrisis'
 import { Text, View, Button, StyleSheet } from 'react-native'
-import notifee from '@notifee/react-native'
-import { AndroidColor } from '@notifee/react-native'
+import { StatusBar } from 'expo-status-bar'
 
 const Home = () => {
-  const onDisplayNotification = async () => {
-    // Request permissions (required for iOS)
-    await notifee.requestPermission()
-
-    // Create a channel (required for Android)
-    const channelId = await notifee.createChannel({
-      id: 'default',
-      name: 'Default Channel',
-    })
-
-    // Display a notification
-    await notifee.displayNotification({
-      title: 'Notification Title',
-      body: 'Main body content of the notification',
-      android: {
-        channelId,
-        smallIcon: 'name-of-a-small-icon', // optional, defaults to 'ic_launcher'.
-        // pressAction is needed if you want the notification to open the app when pressed
-        pressAction: {
-          id: 'default',
-        },
-      },
-    })
-  }
+  const [isCrisis, setIsCrisis] = useState(false)
 
   const styles = StyleSheet.create({
     container: {
@@ -41,7 +18,10 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <Text>BFRB AWARE</Text>
-      <Button title='send Notification' onPress={onDisplayNotification} />
+      <Text>{isCrisis ? 'Crisis in progres' : 'No Crisis'}</Text>
+
+      <Button title='send Notification' onPress={() => setInterval(() => setIsCrisis(detectCrisis()), 3000)} />
+      <StatusBar style='auto' />
     </View>
   )
 }
