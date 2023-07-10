@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import Contacts from './components/Contacts'
 import Guidelines from './components/Guidelines'
+import History from './components/History'
 import Home from './components/Home'
 
 const Tab = createBottomTabNavigator()
@@ -19,6 +20,8 @@ const App = () => {
             if (route.name === 'Home') {
               iconName = focused ? 'ios-play-circle' : 'ios-play-circle-outline'
             } else if (route.name === 'Contacts') {
+              iconName = focused ? 'ios-body' : 'ios-body-outline'
+            } else if (route.name === 'History') {
               iconName = focused ? 'ios-list' : 'ios-list-outline'
             } else if (route.name === 'Guidelines') {
               iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline'
@@ -31,8 +34,9 @@ const App = () => {
           tabBarInactiveTintColor: 'gray',
         })}
       >
-        <Tab.Screen name='Guidelines' component={Guidelines} />
         <Tab.Screen name='Home' component={Home} />
+        <Tab.Screen name='History' component={History} />
+        <Tab.Screen name='Guidelines' component={Guidelines} />
         <Tab.Screen name='Contacts' component={Contacts} />
       </Tab.Navigator>
     </NavigationContainer>
