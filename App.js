@@ -34,10 +34,10 @@ const App = () => {
           tabBarInactiveTintColor: 'gray',
         })}
       >
-        <Tab.Screen name='Home' component={Home} />
-        <Tab.Screen name='History' component={History} />
-        <Tab.Screen name='Guidelines' component={Guidelines} />
-        <Tab.Screen name='Contacts' component={Contacts} />
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="History" component={History} />
+        <Tab.Screen name="Guidelines" component={Guidelines} />
+        <Tab.Screen name="Contacts" component={Contacts} />
       </Tab.Navigator>
     </NavigationContainer>
   )
