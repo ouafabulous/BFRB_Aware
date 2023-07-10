@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "bfrb-aware",
+    "slug": "bfrb-aware",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "bfrb-aware"
+}
