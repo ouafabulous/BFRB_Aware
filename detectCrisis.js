@@ -69,16 +69,17 @@ const detectHeartRateDecrease = (crisis, data) => {
 export default detectCrisis = async() => {
   /*
   For debug purpose
+  */
   const { crisis: isCrisis } = await fetchIsCrisis()
   if (isCrisis) return true
-  */
-  const { hrs } = await fetchRawData()
-  const crisis = detectHeartRateIncrease(hrs)
-  //if(crisis.bool) return true // for demo purpose
-  if (crisis.bool) {
-    const crisisEnd = detectHeartRateDecrease(crisis, hrs)
-    if (crisisEnd.bool === false) return true
-    return false
-  }
   return false
+  // const { hrs } = await fetchRawData()
+  //const crisis = detectHeartRateIncrease(hrs)
+  //if(crisis.bool) return true // for demo purpose
+  //if (crisis.bool) {
+  //  const crisisEnd = detectHeartRateDecrease(crisis, hrs)
+  //  if (crisisEnd.bool === false) return true
+  //  return false
+  //}
+  //return false
 };
