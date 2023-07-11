@@ -13,7 +13,6 @@ const MOCKED_HISTORY = [
 
 const History = () => {
   const [history, setHistory] = useState(MOCKED_HISTORY)
-  console.log(history)
   const [editModalVisible, setEditModalVisible] = useState(false)
 
   const addCrisis = async () => {
