@@ -2,7 +2,7 @@ import * as React from 'react'
 import { useState } from 'react'
 import { Text, View, StyleSheet, Pressable } from 'react-native'
 import HistoryChart from './HistoryChart'
-import HistoryEditModal from './HistoryEditModal'
+import HistoryEditModal from './HistoryModal'
 import { setCrisises, getCrisises } from '../lib/crisisStorage'
 
 const MOCKED_HISTORY = [
@@ -13,7 +13,7 @@ const MOCKED_HISTORY = [
 
 const History = () => {
   const [history, setHistory] = useState(MOCKED_HISTORY)
-  const [editModalVisible, setEditModalVisible] = useState(false)
+  const [historyModalVisible, setHistoryModalVisible] = useState(false)
 
   const addCrisis = async () => {
     let crisises = await getCrisises()
@@ -32,14 +32,14 @@ const History = () => {
 
   return (
     <View style={styles.container}>
-      <HistoryEditModal history={history} visible={editModalVisible} onClose={() => setEditModalVisible(false)} />
+      <HistoryEditModal history={history} visible={historyModalVisible} onClose={() => setHistoryModalVisible(false)} />
 
       <HistoryChart history={history} />
       <View style={styles.linkContainer}>
         <Pressable onPress={addCrisis}>
           <Text style={styles.link}>Add Crisis</Text>
         </Pressable>
-        <Pressable onPress={() => setEditModalVisible(true)}>
+        <Pressable onPress={() => setHistoryModalVisible(true)}>
           <Text style={styles.link}>Show History</Text>
         </Pressable>
       </View>
