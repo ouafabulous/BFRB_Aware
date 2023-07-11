@@ -19,11 +19,6 @@ const History = () => {
     setHistory(crisises)
   }
 
-  const clearCrisises = async () => {
-    setCrisises([])
-    setHistory([])
-  }
-
   if (history == null) {
     getCrisises().then((crisises) => setHistory(crisises))
     return <Text>Loading...</Text>
@@ -31,7 +26,7 @@ const History = () => {
 
   return (
     <View style={styles.container}>
-      <HistoryEditModal visible={editModalVisible} onClose={() => setEditModalVisible(false)} />
+      <HistoryEditModal history={history} visible={editModalVisible} onClose={() => setEditModalVisible(false)} />
 
       <HistoryChart history={history} />
       <View style={styles.linkContainer}>
@@ -39,7 +34,7 @@ const History = () => {
           <Text style={styles.link}>Add Crisis</Text>
         </Pressable>
         <Pressable onPress={() => setEditModalVisible(true)}>
-          <Text style={styles.link}>Edit History</Text>
+          <Text style={styles.link}>Show History</Text>
         </Pressable>
       </View>
     </View>

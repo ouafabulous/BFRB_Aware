@@ -7,10 +7,12 @@ const GuidelinesCard = ({ iconName, text }) => {
       <View
         style={{
           flex: 1,
+          width: '100%',
           alignItems: 'center',
+          backgroundColor: 'red',
         }}
       >
-        <Ionicons name={iconName} size={30} />
+        <Ionicons name={iconName} size={40} />
       </View>
       <View
         style={{
@@ -29,7 +31,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     height: '100%',
-    backgroundColor: '#fff',
+    // backgroundColor: '#fff',
   },
   text: { fontSize: 20, fontFamily: 'Cochin' },
 })
