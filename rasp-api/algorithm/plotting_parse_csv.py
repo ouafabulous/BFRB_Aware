@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def fetch_data(filename, with_utc=False):
+def fetch_data(filename, with_utc=True):
     if with_utc:
         uart_regex = r'\[(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{3})\] ' \
                      r'\[SENSORS_SYNC\]\[sample\] x:(-?\d+).+y:(-?\d+).+z:(-?\d+)'
@@ -42,6 +42,10 @@ def fetch_data(filename, with_utc=False):
     x = np.array(x)
     y = np.array(y)
     z = np.array(z)
+    return t,x,y,z
+
+    
+def plot_data(t,x,y,z):
     fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2)
 
     ax1.plot(t, x, label='x')
@@ -51,6 +55,11 @@ def fetch_data(filename, with_utc=False):
     ax4.plot(t, norm, label='norm')
     plt.legend()
     plt.show()
+    
+def save_data_to_csv(t,x,y,z,filename):
+    column_names= 'timestamp, x, y, z'
+    data = [d for d in zip(t,x,y,z)]
+    np.savetxt('csv/'+filename.split('.')[0].split('/')[-1]+'.csv', data, delimiter=',', header=column_names)
 
 
 if __name__ == '__main__':
@@ -61,6 +70,8 @@ if __name__ == '__main__':
     parser.add_argument('-f', '--file', type=str, help='None')
 
     args = parser.parse_args()
-    fetch_data(args.file)
+    t, x, y, z = fetch_data(args.file)
+    save_data_to_csv(t,x,y,z,args.file)
+    
 
 

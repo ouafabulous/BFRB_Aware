@@ -53,3 +53,6 @@ yarn-error.log
 .expo/
 web-build/
 dist/
+
+# Pyc files
+rasp-api/algorithm/__pycache__
