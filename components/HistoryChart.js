@@ -5,30 +5,53 @@ const chartConfig = {
   backgroundColor: '#ffffff',
   backgroundGradientFrom: '#ffffff',
   backgroundGradientTo: '#ffffff',
-  color: (opacity = 1) => `rgba(26, 255, 146, ${opacity})`,
+  color: (opacity = 1) => `rgba(46, 126, 255, ${opacity})`,
   strokeWidth: 2, // optional, default 3
   barPercentage: 1,
   useShadowColorFromDataset: false, // optional
 }
 
-const HistoryChart = ({ labels, data }) => {
+const countPerDate = (crisisesDateArray) => {
+  const initialValue = {}
+  const grouppedValues = crisisesDateArray.reduce((acc, value) => {
+    if (acc[value.toDateString()] != undefined) acc[value.toDateString()] += 1
+    else {
+      acc[value.toDateString()] = 1
+    }
+    return acc
+  }, initialValue)
+
+  const today = new Date()
+  const countArray = []
+
+  for (let i = 6; i >= 0; i--) {
+    const priorDateString = new Date(new Date().setDate(today.getDate() - i)).toDateString()
+    countArray.push({ date: priorDateString, count: grouppedValues[priorDateString] || 0 })
+  }
+
+  return countArray
+}
+
+const HistoryChart = ({ history }) => {
+  const countArray = countPerDate(history.map((dateString) => new Date(dateString)))
+
   const chartData = {
-    labels,
+    labels: countArray.map((x) => x['date']),
     datasets: [
       {
-        data,
-        color: (opacity = 1) => `rgba(134, 65, 244, ${opacity})`, // optional
+        data: countArray.map((x) => x['count']),
+        color: (opacity = 1) => `rgba(46, 126, 255, ${opacity})`,
         strokeWidth: 2, // optional
       },
     ],
-    legend: ['Rainy Days'], // optional
+    legend: ['Number of crisis the last 7 days'], // optional
   }
 
   return (
     <LineChart
       data={chartData}
       width={Dimensions.get('window').width}
-      height={256}
+      height={400}
       verticalLabelRotation={30}
       chartConfig={chartConfig}
       bezier
