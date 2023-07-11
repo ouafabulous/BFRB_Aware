@@ -40,7 +40,7 @@ const detectHeartRateIncrease = (data) => {
   for (let i = restingHrIndex; i < data.length; i++) {
     const currentHR = data[i].hr;
 
-    if (currentHR >= restingHR + 1) {
+    if (currentHR > restingHR + 10) {
 			return {bool: true, restingHR: restingHR, crisisInfo: data[i], crisisIndex: i};
     }
   }

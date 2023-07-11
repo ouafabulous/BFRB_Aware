@@ -29,6 +29,9 @@ The application fetches a json wich contains:
 
 Currently, we are using the heartrate to flag a crisis if there is a difference of more than 10 between two values.
 
+## Technical architecture
+![alt text](./project-overview.png)
+
 # Work to be done
 
 The app currently does not use the `position` values. It could be done to identify the movement of the hand and detect
