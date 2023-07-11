@@ -28,7 +28,7 @@ def get_data():
         positions, hrs = parse_data(filepath).values()
         response["hrs"] += hrs
         response["positions"] += positions
-        os.remove(filepath)
+        # os.remove(filepath)
     return response
 
 @app.route("/get/crisis")
