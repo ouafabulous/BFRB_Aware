@@ -37,10 +37,10 @@ const History = () => {
       <HistoryChart history={history} />
       <View style={styles.linkContainer}>
         <Pressable onPress={addCrisis}>
-          <Text style={styles.link}>Add Crisis</Text>
+          <Text style={styles.link}>Add crisis event</Text>
         </Pressable>
         <Pressable onPress={() => setHistoryModalVisible(true)}>
-          <Text style={styles.link}>Show History</Text>
+          <Text style={styles.link}>Show history</Text>
         </Pressable>
       </View>
     </View>
