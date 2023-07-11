@@ -6,13 +6,18 @@ import { useFonts } from 'expo-font'
 
 const Home = () => {
   const [isCrisis, setIsCrisis] = useState(false)
-  const intervalRef = useRef(null)
   const animationRef = useRef(null)
 
   // Fonts
   useFonts({
     Cochin: require('../assets/fonts/Cochin.ttf'),
   })
+
+  useEffect(() => {
+    setInterval(() => detectCrisis().then((isCrisis) => {
+      fade(isCrisis)
+      setIsCrisis(isCrisis)}), 5000)
+  }, [])
 
   // Lottie
   useEffect(() => animationRef.current?.play(), [])
@@ -36,16 +41,6 @@ const Home = () => {
     }).start()
   }
 
-  // TBD : detect crisis permanently
-  // const toggleCrisisCheck = () => {
-  //   if (intervalRef.current == null) {
-  //     intervalRef.current = setInterval(() => setIsCrisis(detectCrisis()), 1000)
-  //   } else {
-  //     clearInterval(intervalRef.current)
-  //     intervalRef.current = null
-  //   }
-  // }
-
   const fade = (isCrisis) => {
     if (isCrisis) {
       // Recover
@@ -67,7 +62,7 @@ const Home = () => {
   return (
     <View style={styles.container}>
       {isCrisis ? (
-        <Animated.View style={{ flex: 1, width: '100%', alignItems: 'center', opacity: fadeCrisisMode }}>
+        <Animated.View style={{ flex: 1, width: '100%', alignItems: 'center' }}>
           <View style={{ flex: 2, height: '50%', width: '50%' }}>
             <Lottie source={require('../assets/animations/danger.json')} autoPlay loop />
           </View>
@@ -77,7 +72,7 @@ const Home = () => {
           </View>
         </Animated.View>
       ) : (
-        <Animated.View style={{ flex: 1, width: '100%', alignItems: 'center', opacity: fadeRelaxMode }}>
+        <Animated.View style={{ flex: 1, width: '100%', alignItems: 'center' }}>
           <View style={{ flex: 4, width: '100%' }}>
             <Lottie source={require('../assets/animations/flower-moving.json')} autoPlay loop />
           </View>
