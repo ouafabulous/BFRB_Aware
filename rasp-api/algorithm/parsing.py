@@ -57,7 +57,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     data = parse_data(input_file_path)
-    hrs, positions = data.values()
+    positions, hrs = data.values()
 
     output_heart_rate = f"./json_outputs/heart_rate_{input_file_path.split('.')[0].split('/')[-1]}.json"
     output_position = f"./json_outputs/position_{input_file_path.split('.')[0].split('/')[-1]}.json"
