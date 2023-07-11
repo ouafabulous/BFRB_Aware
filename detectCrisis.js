@@ -40,7 +40,7 @@ const detectHeartRateIncrease = (data) => {
   for (let i = restingHrIndex; i < data.length; i++) {
     const currentHR = data[i].hr;
 
-    if (currentHR > restingHR + 10) {
+    if (currentHR >= restingHR + 1) {
 			return {bool: true, restingHR: restingHR, crisisInfo: data[i], crisisIndex: i};
     }
   }
@@ -67,10 +67,14 @@ const detectHeartRateDecrease = (crisis, data) => {
 
 
 export default detectCrisis = async() => {
+  /*
+  For debug purpose
   const { crisis: isCrisis } = await fetchIsCrisis()
   if (isCrisis) return true
+  */
   const { hrs } = await fetchRawData()
   const crisis = detectHeartRateIncrease(hrs)
+  //if(crisis.bool) return true // for demo purpose
   if (crisis.bool) {
     const crisisEnd = detectHeartRateDecrease(crisis, hrs)
     if (crisisEnd.bool === false) return true
