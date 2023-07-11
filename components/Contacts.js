@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, FlatList, Image, StyleSheet, TouchableOpacity, Linking, Platform } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
-const contactsData = [
+const MOCKED_CONTACTS = [
   {
     id: 1,
     firstName: 'Arvin',
@@ -20,7 +20,6 @@ const contactsData = [
     profilePicture:
       'https://i.seadn.io/gae/_fy_SHzXyxgbeFfFyqZ8JpQ48a_w4Wl50b8FSPjNW7wV8FzYp_Ag3S6DdcZfFlSeg78_QfgVcZ3vSL4_nJbQEthOfQWPHjYv0gOpyA?auto=format&dpr=1&w=1000',
   },
-  // Ajoutez d'autres contacts ici...
 ]
 
 const ContactListItem = ({ contact }) => {
@@ -69,7 +68,7 @@ const ContactList = () => {
   return (
     <View style={styles.page}>
       <FlatList
-        data={contactsData}
+        data={MOCKED_CONTACTS}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => <ContactListItem contact={item} />}
       />
