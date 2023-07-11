@@ -25,7 +25,7 @@ const contactsData = [
 
 const ContactListItem = ({ contact }) => {
   return (
-    <View style={styles.contactContainer}>
+    <View style={styles.contactsContainer}>
       <Image source={{ uri: contact.profilePicture }} style={styles.profilePicture} />
       <View style={styles.contactInfo}>
         <Text style={styles.name}>{`${contact.firstName} ${contact.lastName}`}</Text>
@@ -44,21 +44,28 @@ const ContactListItem = ({ contact }) => {
 
 const ContactList = () => {
   return (
-    <FlatList
-      data={contactsData}
-      keyExtractor={(item) => item.id.toString()}
-      renderItem={({ item }) => <ContactListItem contact={item} />}
-    />
+    <View style={styles.page}>
+      <FlatList
+        data={contactsData}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => <ContactListItem contact={item} />}
+      />
+    </View>
   )
 }
 
 const styles = StyleSheet.create({
-  contactContainer: {
+  page: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+  contactsContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
+    backgroundColor: '#fff',
   },
   profilePicture: {
     width: 50,
