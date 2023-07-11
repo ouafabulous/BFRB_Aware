@@ -1,24 +1,14 @@
 import * as React from 'react'
 import { useState } from 'react'
-import { Text, Button, View } from 'react-native'
-import AsyncStorage from '@react-native-async-storage/async-storage'
+import { Text, View, StyleSheet, Pressable } from 'react-native'
 import HistoryChart from './HistoryChart'
+import HistoryEditModal from './HistoryEditModal'
 import { setCrisises, getCrisises } from '../lib/crisisStorage'
-
-// const CrisisList = ({ crisises }) => {
-//   if (!crisises) return <Text>Loading...</Text>
-
-//   return (
-//     <View>
-//       {crisises.map((crisis, index) => (
-//         <Text key={index}>{crisis}</Text>
-//       ))}
-//     </View>
-//   )
-// }
 
 const History = () => {
   const [history, setHistory] = useState(null)
+  const [editModalVisible, setEditModalVisible] = useState(false)
+
   const addCrisis = async () => {
     let crisises = await getCrisises()
     if (crisises == null) crisises = []
@@ -29,32 +19,53 @@ const History = () => {
     setHistory(crisises)
   }
 
-  const clearCrisises = async () => {
-    setCrisises([])
-    setHistory([])
-  }
-
   if (history == null) {
     getCrisises().then((crisises) => setHistory(crisises))
     return <Text>Loading...</Text>
   }
 
   return (
-    <View>
+    <View style={styles.container}>
+      <HistoryEditModal history={history} visible={editModalVisible} onClose={() => setEditModalVisible(false)} />
+
       <HistoryChart history={history} />
-      <View
-        style={{
-          flexDirection: 'row',
-          justifyContent: 'space-evenly',
-          height: 100,
-          padding: 20,
-        }}
-      >
-        <Button title="Add Crisis" onPress={addCrisis} />
-        <Button title="Edit History" onPress={clearCrisises} />
+      <View style={styles.linkContainer}>
+        <Pressable onPress={addCrisis}>
+          <Text style={styles.link}>Add Crisis</Text>
+        </Pressable>
+        <Pressable onPress={() => setEditModalVisible(true)}>
+          <Text style={styles.link}>Show History</Text>
+        </Pressable>
       </View>
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  },
+  baseText: {
+    fontFamily: 'Cochin',
+  },
+  titleText: {
+    fontSize: 20,
+    fontFamily: 'Cochin',
+    marginBottom: 64,
+  },
+  link: {
+    color: '#2e7eff',
+  },
+  linkContainer: {
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    height: 100,
+    padding: 20,
+  },
+})
 
 export default History
