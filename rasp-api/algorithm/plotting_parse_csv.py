@@ -21,7 +21,7 @@ def fetch_data(filename, with_utc=True):
         if matching:
             if with_utc:
                 struc_time = time.strptime(matching.group(1), '%Y-%m-%d %H:%M:%S.%f')
-                timestamp = time.mktime(struc_time)
+                timestamp = time.time_ns()
                 t.append(int(timestamp))
                 x.append(int(matching.group(2)))
                 y.append(int(matching.group(3)))
@@ -33,7 +33,6 @@ def fetch_data(filename, with_utc=True):
 
     if with_utc:
         t = np.array(t)
-        t = t - t[0]
     else:
         t = np.linspace(0, len(x) - 1, len(x))
 
