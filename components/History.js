@@ -5,8 +5,15 @@ import HistoryChart from './HistoryChart'
 import HistoryEditModal from './HistoryEditModal'
 import { setCrisises, getCrisises } from '../lib/crisisStorage'
 
+const MOCKED_HISTORY = [
+  'Thu Jul 6 2023 15:23:30 GMT+0200',
+  'Thu Jul 6 2023 15:23:30 GMT+0200',
+  'Sat Jul 8 2023 15:23:30 GMT+0200',
+]
+
 const History = () => {
-  const [history, setHistory] = useState(null)
+  const [history, setHistory] = useState(MOCKED_HISTORY)
+  console.log(history)
   const [editModalVisible, setEditModalVisible] = useState(false)
 
   const addCrisis = async () => {
@@ -57,7 +64,9 @@ const styles = StyleSheet.create({
     marginBottom: 64,
   },
   link: {
-    color: '#2e7eff',
+    color: '#ff6347',
+    fontSize: 20,
+    fontFamily: 'Cochin',
   },
   linkContainer: {
     width: '100%',

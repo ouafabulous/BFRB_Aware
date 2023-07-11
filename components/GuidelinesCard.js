@@ -9,7 +9,6 @@ const GuidelinesCard = ({ iconName, text }) => {
           flex: 1,
           width: '100%',
           alignItems: 'center',
-          backgroundColor: 'red',
         }}
       >
         <Ionicons name={iconName} size={40} />
@@ -31,7 +30,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     height: '100%',
-    // backgroundColor: '#fff',
+    backgroundColor: '#fff',
   },
   text: { fontSize: 20, fontFamily: 'Cochin' },
 })

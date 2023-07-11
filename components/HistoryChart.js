@@ -5,7 +5,7 @@ const chartConfig = {
   backgroundColor: '#ffffff',
   backgroundGradientFrom: '#ffffff',
   backgroundGradientTo: '#ffffff',
-  color: (opacity = 1) => `rgba(46, 126, 255, ${opacity})`,
+  color: (opacity = 1) => `rgba(80, 80, 80, ${opacity})`,
   strokeWidth: 2, // optional, default 3
   barPercentage: 1,
   useShadowColorFromDataset: false, // optional
@@ -14,9 +14,9 @@ const chartConfig = {
 const countPerDate = (crisisesDateArray) => {
   const initialValue = {}
   const grouppedValues = crisisesDateArray.reduce((acc, value) => {
-    if (acc[value.toDateString()] != undefined) acc[value.toDateString()] += 1
+    if (acc[value.toLocaleDateString()] != undefined) acc[value.toLocaleDateString()] += 1
     else {
-      acc[value.toDateString()] = 1
+      acc[value.toLocaleDateString()] = 1
     }
     return acc
   }, initialValue)
@@ -25,7 +25,7 @@ const countPerDate = (crisisesDateArray) => {
   const countArray = []
 
   for (let i = 6; i >= 0; i--) {
-    const priorDateString = new Date(new Date().setDate(today.getDate() - i)).toDateString()
+    const priorDateString = new Date(new Date().setDate(today.getDate() - i)).toLocaleDateString()
     countArray.push({ date: priorDateString, count: grouppedValues[priorDateString] || 0 })
   }
 
@@ -40,7 +40,7 @@ const HistoryChart = ({ history }) => {
     datasets: [
       {
         data: countArray.map((x) => x['count']),
-        color: (opacity = 1) => `rgba(46, 126, 255, ${opacity})`,
+        color: (opacity = 1) => `rgba(255, 63, 47, ${opacity})`,
         strokeWidth: 2, // optional
       },
     ],
