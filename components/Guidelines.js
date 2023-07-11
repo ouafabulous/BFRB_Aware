@@ -5,15 +5,15 @@ import GuidelinesCard from './GuidelinesCard'
 const guidelines = [
   {
     iconName: 'ios-body-outline',
-    text: 'Take 10 deep breath',
+    text: 'Focus on your breath. Sometimes taking a few deep breath is enough to relax !',
   },
   {
     iconName: 'ios-chatbubble-ellipses-outline',
-    text: 'Talk to a close person',
+    text: 'Call a friend or a member of your family. Tell them how you feel.',
   },
   {
     iconName: 'ios-heart-outline',
-    text: 'Do something you love',
+    text: 'Do something you love ! Keep your mind free and light.',
   },
 ]
 
