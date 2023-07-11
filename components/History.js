@@ -1,12 +1,14 @@
 import * as React from 'react'
 import { useState } from 'react'
-import { Text, Button, View, StyleSheet, Pressable } from 'react-native'
-import AsyncStorage from '@react-native-async-storage/async-storage'
+import { Text, View, StyleSheet, Pressable } from 'react-native'
 import HistoryChart from './HistoryChart'
+import HistoryEditModal from './HistoryEditModal'
 import { setCrisises, getCrisises } from '../lib/crisisStorage'
 
 const History = () => {
   const [history, setHistory] = useState(null)
+  const [editModalVisible, setEditModalVisible] = useState(false)
+
   const addCrisis = async () => {
     let crisises = await getCrisises()
     if (crisises == null) crisises = []
@@ -29,12 +31,14 @@ const History = () => {
 
   return (
     <View style={styles.container}>
+      <HistoryEditModal visible={editModalVisible} onClose={() => setEditModalVisible(false)} />
+
       <HistoryChart history={history} />
       <View style={styles.linkContainer}>
         <Pressable onPress={addCrisis}>
           <Text style={styles.link}>Add Crisis</Text>
         </Pressable>
-        <Pressable onPress={clearCrisises}>
+        <Pressable onPress={() => setEditModalVisible(true)}>
           <Text style={styles.link}>Edit History</Text>
         </Pressable>
       </View>
