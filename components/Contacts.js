@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, FlatList, Image, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, FlatList, Image, StyleSheet, TouchableOpacity, Linking, Platform } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
 const contactsData = [
@@ -24,6 +24,29 @@ const contactsData = [
 ]
 
 const ContactListItem = ({ contact }) => {
+  const handlePhoneCall = () => {
+    let phoneUrl = ''
+
+    if (Platform.OS === 'android') {
+      phoneUrl = `telprompt:${contact.phoneNumber}`
+    } else if (Platform.OS === 'ios') {
+      phoneUrl = `tel:${contact.phoneNumber}`
+    } else {
+      console.log('Phone call not supported on this platform')
+      return
+    }
+
+    Linking.canOpenURL(phoneUrl)
+      .then((supported) => {
+        if (!supported) {
+          console.log('Phone call not supported')
+        } else {
+          return Linking.openURL(phoneUrl)
+        }
+      })
+      .catch((error) => console.log('An error occurred', error))
+  }
+
   return (
     <View style={styles.contactsContainer}>
       <Image source={{ uri: contact.profilePicture }} style={styles.profilePicture} />
@@ -32,7 +55,7 @@ const ContactListItem = ({ contact }) => {
         <Text>{contact.email}</Text>
         <Text>{contact.phoneNumber}</Text>
       </View>
-      <TouchableOpacity onPress={() => {}} style={styles.iconContainer}>
+      <TouchableOpacity onPress={handlePhoneCall} style={styles.iconContainer}>
         <Ionicons name="call" size={24} color="tomato" />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => {}} style={styles.iconContainer}>

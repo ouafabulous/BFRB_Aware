@@ -51,5 +51,12 @@
 	<false/>
   <key>UIStatusBarStyle</key>
   <string>UIStatusBarStyleDefault</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+  	<string>tel</string>
+  	<string>telprompt</string>
+	</array>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Phone call is required to contact the selected person.</string>
 </dict>
 </plist>
