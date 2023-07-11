@@ -23,11 +23,6 @@ def extract_data(data: str, line: str) -> int:
 
 
 def parse_data(input_file_path: str):
-    # Check if the file name is provided as an argument
-    if len(sys.argv) < 2:
-        print("Please provide the file name to parse as an argument.")
-        sys.exit(1)
-
     parsed_position = []
     parsed_heart_rate = []
     with open(input_file_path, 'r') as file:
@@ -55,6 +50,12 @@ def parse_data(input_file_path: str):
 
 if __name__ == "__main__":
     input_file_path = sys.argv[1]
+
+    # Check if the file name is provided as an argument
+    if len(sys.argv) < 2:
+        print("Please provide the file name to parse as an argument.")
+        sys.exit(1)
+
     data = parse_data(input_file_path)
     hrs, positions = data.values()
 
