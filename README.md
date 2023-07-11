@@ -49,4 +49,16 @@ python3 parsing.py <path_to_input_file>
 
 ## Crisis detection
 
-In order to detect a crisis, we are monitoring heart rate. Any increase of 10 bpm is considered a crisis and is detected through `detectHeartRateIncrease`, any decrease of heart rate back to base level is considered the end of a crisis and is detected through `detectHeartRateDecrease`. Both algorithm are in `./detectCrisis.js`.
+A crisis is characterised by a higher stress level and a specific motion. 
+### Heart rate detection
+
+To detect a higher stress level, we decided to look at the heart rate. 
+We are monitoring heart rate. Any increase of 10 bpm is considered a crisis and is detected through `detectHeartRateIncrease`, any decrease of heart rate back to base level is considered the end of a crisis and is detected through `detectHeartRateDecrease`. Both algorithm are in `./detectCrisis.js`.
+
+### Motion detection
+
+To detect the motion, we first explored identifying a pattern and isolating it to compare it to live data. But motion are never exactly the same, so we couldn't identify a clear pattern.
+
+Inspiring ourselves from the gesture detection project on a Bangle.js watch (https://docs.edgeimpulse.com/experts/prototype-and-concept-projects/gesture-recognition-with-banglejs-smartwatch), we used Edge Impulse to train a neural network to detect the motion we want to identify(https://studio.edgeimpulse.com/public/252177/latest).
+
+This neural network can be exported as a tensorflow model. Unfortunately we were not able to integrate it in the mobile app during the hackathon. 
