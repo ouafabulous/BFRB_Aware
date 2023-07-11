@@ -31,5 +31,9 @@ def get_data():
         os.remove(filepath)
     return response
 
+@app.route("/get/crisis")
+def get_crisis():
+    return jsonify({"crisis": os.path.isfile('./crisis/.yes')})
+
 if __name__ == "__main__":        # on running python app.py
     app.run(host='0.0.0.0', port='8080', debug='true') # run the flask 
