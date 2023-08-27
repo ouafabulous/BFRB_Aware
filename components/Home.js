@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { Text, View, Button, StyleSheet, Animated } from 'react-native'
+import React, { useState, useEffect, useRef, Component } from 'react'
+import { Text, View, Button, StyleSheet, Animated, AppRegistry } from 'react-native'
 import Lottie from 'lottie-react-native'
 import detectCrisis from '../detectCrisis'
 import { useFonts } from 'expo-font'
@@ -68,7 +68,7 @@ const Home = () => {
           </View>
           <View style={{ flex: 1 }}>
             <Text style={styles.dangerTitle}>You might be experiencing a crisis.</Text>
-            <Text style={styles.dangerTitle}> It's alright !</Text>
+            <Text style={styles.dangerTitle}>It's alright!</Text>
           </View>
         </Animated.View>
       ) : (

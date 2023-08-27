@@ -5,7 +5,15 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "bundleIdentifier": "com.nonamecompany.bfrb-aware",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.nonamecompany.bfrb-aware",
+      "versionCode": 1
+    }
   },
   "name": "bfrb-aware"
 }
