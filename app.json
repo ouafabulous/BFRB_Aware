@@ -7,11 +7,11 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "com.nonamecompany.bfrb-aware",
+      "bundleIdentifier": "com.nonamecompany.bfrbaware",
       "buildNumber": "1.0.0"
     },
     "android": {
-      "package": "com.nonamecompany.bfrb-aware",
+      "package": "com.nonamecompany.bfrbaware",
       "versionCode": 1
     }
   },
